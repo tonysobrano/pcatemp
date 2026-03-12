@@ -12,26 +12,26 @@ import s_4 from "@/assets/img/home-01/service/service-icon-4.png";
 const service_data = [
   {
     id: 1,
-    title: "VIDEO CREATION",
-    desc: "Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum est ultricies integer quis auctor elit sed.",
+    title: "Video Production",
+    desc: "We produce high-quality video content - commercials, event coverage, corporate films, and social media reels that tell your story and capture attention.",
     icon: s_1,
   },
   {
     id: 2,
-    title: "ART DIRECTION",
-    desc: "Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum est ultricies integer quis auctor elit sed.",
+    title: "Branding & Identity",
+    desc: "Your brand is more than a logo - it is how the world sees you. We craft complete brand identities that are strategic, memorable, and built to last.",
     icon: s_2,
   },
   {
     id: 3,
-    title: "MOTION DESIGN",
-    desc: "Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum est ultricies integer quis auctor elit sed.",
+    title: "Web Design & Development",
+    desc: "Modern, responsive websites built to convert visitors into customers - designed with your brand identity and business goals at the center.",
     icon: s_3,
   },
   {
     id: 4,
-    title: "BRAND STRATEGY",
-    desc: "Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum est ultricies integer quis auctor elit sed.",
+    title: "Business Systems",
+    desc: "We build custom digital tools and systems that help businesses operate more efficiently - from point-of-sale solutions to internal management platforms.",
     icon: s_4,
   },
 ];
@@ -43,10 +43,12 @@ const ServiceOne = () => {
         <div className="row">
           <div className="col-xl-6 col-lg-6">
             <div className="tp-service-title-box p-relative">
-              <span className="tp-section-subtitle subtitle-position tp-char-animation">I Think a lot</span>
+              <span className="tp-section-subtitle subtitle-position tp-char-animation">
+                What we do
+              </span>
               <h4 className="tp-section-title tp-char-animation">
-                Thoughtful<br />
-                <span>Process</span>
+                {"We're"} really<br />
+                <span>good at</span>
               </h4>
             </div>
 

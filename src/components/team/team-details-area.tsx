@@ -42,7 +42,7 @@ export default function TeamDetailsArea({ id }: IdProps) {
                 </p>
               </div>
               <div className="tm-details-portfolio mb-50">
-                <span className="tm-details-social-title">Portfolio:</span>
+                <span className="tm-details-social-title">Works:</span>
                 <Link href="#">Behance</Link>
                 <Link href="#">Dribbble</Link>
                 <Link href="#">Meduim</Link>

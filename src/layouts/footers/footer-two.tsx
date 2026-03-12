@@ -42,7 +42,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 )}
                 <div className="tp-footer-2-widget-text">
                   <p>
-                    Drop us a line sed id semper <br /> risus in hend rerit.
+                    Jigjiga&apos;s Leading Creative & <br /> Digital Agency
                   </p>
                 </div>
               </div>
@@ -52,37 +52,26 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 <div className="tp-footer-2-widget-menu">
                   <h4 className="tp-footer-2-widget-title">Sitemap</h4>
                   <ul>
-                    <li><Link href="#">Home</Link></li>
-                    <li><Link href="#">About</Link></li>
-                    <li><Link href="#">Contact</Link></li>
-                    <li> <Link href="#">Blog</Link></li>
-                    <li><Link href="#">Landing</Link></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/about-us">About</Link></li>
+                    <li><Link href="/parallax-slider">Work</Link></li>
+                    <li><Link href="/blog-modern">Blog</Link></li>
+                    <li><Link href="/contact-2">Contact</Link></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="col-xl-3 col-lg-5 col-md-6 mb-50">
               <div className="tp-footer-2-widget footer-col-2-3">
-                <h4 className="tp-footer-2-widget-title">Office</h4>
-                <div className="tp-footer-2-contact-item">
-                  <span>
-                    <Link
-                      href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                      target="_blank"
-                    >
-                      740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK
-                    </Link>
-                  </span>
-                </div>
-                <div className="tp-footer-2-contact-item">
-                  <span>
-                    <Link href="tel:+725214456">P: + 725 214 456</Link>
-                  </span>
-                </div>
-                <div className="tp-footer-2-contact-item">
-                  <span>
-                    <Link href="mailto:contact@liko.com">E: contact@liko.com</Link>
-                  </span>
+                <h4 className="tp-footer-2-widget-title">Services</h4>
+                <div className="tp-footer-2-widget-menu">
+                  <ul>
+                    <li><Link href="/service">Branding &amp; Identity</Link></li>
+                    <li><Link href="/service">Graphic Design</Link></li>
+                    <li><Link href="/service">Video Production</Link></li>
+                    <li><Link href="/service">Web Design &amp; Dev</Link></li>
+                    <li><Link href="/service">Digital Marketing</Link></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -90,7 +79,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
               <div className="tp-footer-2-widget footer-col-2-4">
                 <div className="tp-footer-2-widget-newslatter">
                   <h4 className="tp-footer-2-widget-title">
-                    Subscribe to our newsletter
+                    Subscribe to our newsletter we might send you something cool
                   </h4>
                   <form action="#">
                     <div className="tp-footer-2-input p-relative">
@@ -117,15 +106,15 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
                 <p>
-                  All rights reserved — {new Date().getFullYear()} © Themepure
+                  {new Date().getFullYear()} © Prime Creative — All rights reserved
                 </p>
               </div>
             </div>
             <div className="col-xl-8 col-lg-7">
               <div className="tp-copyright-2-social text-center text-lg-end">
-                <Link className="mb-10" href="#">Linkedin</Link>
-                <Link className="mb-10" href="#">Twitter</Link>
-                <Link className="mb-10" href="#">Instagram</Link>
+                <Link className="mb-10" href="#">instagram</Link>
+                <Link className="mb-10" href="#">tiktok</Link>
+                <Link className="mb-10" href="#">facebook</Link>
               </div>
             </div>
           </div>

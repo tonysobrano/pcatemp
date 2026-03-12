@@ -19,6 +19,7 @@ import { charAnimation, fadeAnimation, revelAnimationOne } from "@/utils/title-a
 import { footerTwoAnimation } from "@/utils/footer-anim";
 import { hoverBtn } from "@/utils/hover-btn";
 import { teamMarqueAnim } from "@/utils/scroll-marque";
+import { textInvert } from "@/utils/text-invert";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 
@@ -29,6 +30,7 @@ const HomeMain = () => {
     const timer = setTimeout(() => {
       charAnimation();
       fadeAnimation();
+      textInvert();
       revelAnimationOne();
       teamMarqueAnim();
       hoverBtn();

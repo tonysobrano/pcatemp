@@ -39,9 +39,9 @@ export default function AboutUsHero() {
                 Digital <br /> creative agency
               </span>
               <h1 className="ab-inner-hero-title tp-char-animation">
-                Building Digital Presence
+                Building your Presence
               </h1>
-              <p>Digital experiences with maximum emotional impact</p>
+              <p>Jigjiga&apos;s First Full-Service Creative Agency</p>
             </div>
           </div>
         </div>
@@ -53,10 +53,11 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <p>
-                Liko develops, designs & delivers websites & creative campaigns
-                that drive results,
+                We don&apos;t just make things look <br /> good, We make businesses work better.
               </p>
-               <Link className="tp-btn-white-sm border-style" href="#">Our Story</Link>
+              <Link className="tp-btn-white-sm border-style mt-30" href="#our-story">
+                Our Story
+              </Link>
             </div>
           </div>
         </div>

@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import AboutUsMain from "@/pages/about/about-us";
 
 export const metadata: Metadata = {
-  title: "Liko - About us page",
+  title: "Prime Creative - Jigjiga's First Full-Service Creative Agency",
+  description: "Learn about Prime Creative, Jigjiga's first full-service creative agency.",
 };
 
 const AboutUsPage = () => {

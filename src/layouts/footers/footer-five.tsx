@@ -19,8 +19,8 @@ export default function FooterFive() {
                   </h4>
                 </div>
                 <div className="tp-footer-5-info d-flex align-items-center justify-content-start justify-content-md-end">
-                  <Link className="tp-footer-5-mail" href="mailto:info@liko.com">
-                    info@liko.com
+                  <Link className="tp-footer-5-mail" href="mailto:info@primecreative.agency">
+                    info@primecreative.agency
                   </Link>
                   <Link className="tp-footer-5-link" href="#">
                     <UpArrow clr="#19191A" />
@@ -38,20 +38,7 @@ export default function FooterFive() {
         <div className="container container-1560">
           <div className="row align-items-center">
             <div className="col-xl-3 col-lg-6 col-md-5 d-none d-xl-block">
-              <div className="tp-copyright-5-left-info">
-                <span>
-                  <Link
-                    href="https://www.google.com/maps/@40.1001598,-74.0544407,8.83z?entry=ttu"
-                    target="_blank"
-                  >
-                    86 Street St.San Francisco,CA
-                  </Link>
-                </span>
-                <span>
-                  Phone:
-                  <Link href="tel:+725214456">+ 725 214 456</Link>
-                </span>
-              </div>
+              <div className="tp-copyright-5-left-info"></div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-7">
               <div className="tp-copyright-2-social text-start text-sm-center text-xl-center">
@@ -64,11 +51,7 @@ export default function FooterFive() {
                 <Link className="mb-10" href="#">
                   Instagram
                 </Link>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 col-md-5">
-              <div className="tp-copyright-2-left text-center text-md-end">
-                <p>©{new Date().getFullYear()}- All Rights Reserved</p>
+                <p className="mt-20 mb-0">©{new Date().getFullYear()} Prime Creative. All rights reserved.</p>
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ export default function HeroBannerFour() {
                 <span className="tp-reveal-line">Creative agency</span>
               </h4>
               <span className="tp-hero-3-category tp_reveal_anim">
-                Marketing - Production - Branding - Development
+                Production - Marketing - Branding - Development
               </span>
               <Link className="tp-btn-black-2" href="/contact">
                 Say Hello{" "}

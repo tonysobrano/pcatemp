@@ -9,6 +9,8 @@ import b_3 from "@/assets/brand/client-logo-3.png";
 import b_4 from "@/assets/brand/client-logo-4.png";
 import b_5 from "@/assets/brand/client-logo-5.png";
 import b_6 from "@/assets/brand/client-logo-7.png";
+import b_7 from "@/assets/brand/client-logo-8.png";
+import b_8 from "@/assets/brand/client-logo-9.png";
 
 // brand images
 const brand_images = [
@@ -18,6 +20,8 @@ const brand_images = [
   { src: b_4, width: 93, height: 34 },
   { src: b_5, width: 92, height: 50 },
   { src: b_6, width: 110, height: 22 },
+  { src: b_7, width: 109, height: 34 },
+  { src: b_8, width: 70, height: 38 },
 ];
 
 export default function BrandFive() {
@@ -69,7 +73,6 @@ export default function BrandFive() {
                 connection. That is why some of the biggest companies stayed with
                 us for years.
               </p>
-              <span>More about us</span>
             </div>
           </div>
         </div>
