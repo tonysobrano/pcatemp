@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
 // images
 import c_img_1 from "@/assets/img/inner-contact/contact/contact-1.jpg";
@@ -10,7 +10,19 @@ import c_img_5 from "@/assets/img/inner-contact/contact/contact-5.jpg";
 import c_img_6 from "@/assets/img/inner-contact/contact/contact-6.jpg";
 import Link from "next/link";
 
-const location_data = [
+type LocationItem = {
+  id: number;
+  country: string;
+  img_1: StaticImageData;
+  img_2: StaticImageData;
+  map: string;
+  address: string;
+  email: string;
+  phone?: string;
+  note?: string;
+};
+
+const location_data: LocationItem[] = [
   {
     id: 1,
     country: "Jigjiga Studio",
