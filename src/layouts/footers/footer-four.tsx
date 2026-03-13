@@ -44,14 +44,14 @@ export default function FooterFour() {
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
                   <p className="mb-100">
-                    Drop us a line sed id semper <br />
-                    risus in hend rerit.
+                    Clear communication, polished execution, and better systems
+                    for growing brands.
                   </p>
                   <Link className="tp-footer-3-logo p-relative" href="/">
                     <Image src={logo} alt="logo" />
                   </Link>
                   <p className="tp-footer-3-copyright">
-                    {new Date().getFullYear()} Themepure <br /> © All rights reserved
+                    {new Date().getFullYear()} Prime Creative <br /> © All rights reserved
                   </p>
                 </div>
               </div>
@@ -62,13 +62,12 @@ export default function FooterFour() {
                   <h4 className="tp-footer-3-title">Contact</h4>
                   <div className="tp-footer-2-contact-item">
                     <span>
-                      <Link href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                      target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</Link>
+                      <Link href="https://maps.google.com/?q=Jigjiga,Ethiopia"
+                      target="_blank">Jigjiga, Somali Region, Ethiopia</Link>
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>P: <Link href="tel:+725214456">+ 725 214 456</Link></span>
-                    <span>E: <Link href="mailto:contact@liko.com">contact@liko.com</Link></span>
+                    <span>E: <Link href="mailto:info@primecreative.agency">info@primecreative.agency</Link></span>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">

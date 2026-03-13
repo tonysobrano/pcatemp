@@ -46,7 +46,7 @@ export default function RegisterForm() {
             <label htmlFor="email">Your Email</label>
           </div>
           <div className="tp-login-input">
-            <input id="email" {...register("email")} type="email" placeholder="liko@mail.com" />
+            <input id="email" {...register("email")} type="email" placeholder="name@company.com" />
           </div>
           <ErrorMsg msg={errors.email?.message!} />
         </div>
@@ -93,7 +93,7 @@ export default function RegisterForm() {
       </div>
       <div className="tp-login-bottom">
         <button type="submit" className="tp-login-btn w-100">
-          Sign Up
+          Create Account
         </button>
       </div>
     </form>

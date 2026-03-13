@@ -32,11 +32,11 @@ const LoginMain = () => {
                   <div className="col-xl-6 col-lg-8">
                     <div className="tp-login-wrapper">
                       <div className="tp-login-top text-center mb-30">
-                        <h3 className="tp-login-title">Sign Up Liko.</h3>
+                        <h3 className="tp-login-title">Welcome back.</h3>
                         <p>
-                          Don’t have an account?{" "}
+                          Need an account?{" "}
                           <span>
-                            <Link href="/register">Sign In</Link>
+                            <Link href="/register">Create one</Link>
                           </span>
                         </p>
                       </div>
@@ -44,7 +44,7 @@ const LoginMain = () => {
                         <SocialLogin />
                         <div className="tp-login-mail text-center mb-40">
                           <p>
-                            or Sign in with <Link href="#">Email</Link>
+                            or continue with <Link href="#">email</Link>
                           </p>
                         </div>
                         {/* login form */}

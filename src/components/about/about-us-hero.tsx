@@ -28,36 +28,38 @@ export default function AboutUsHero() {
         </a>
       </div>
       <div className="container container-1480">
-        <div className="row">
-          <div className="col-xl-8">
-            <div
-              className="ab-inner-hero-title-box"
-              data-lag="0.2"
-              data-stagger="0.08"
-            >
-              <span className="ab-inner-hero-subtitle">
-                Digital <br /> creative agency
-              </span>
-              <h1 className="ab-inner-hero-title tp-char-animation">
-                Building your Presence
-              </h1>
-              <p>Jigjiga&apos;s First Full-Service Creative Agency</p>
+        <div className="ab-sticky-header-align">
+          <div className="row">
+            <div className="col-xl-8">
+              <div
+                className="ab-inner-hero-title-box"
+                data-lag="0.2"
+                data-stagger="0.08"
+              >
+                <span className="ab-inner-hero-subtitle">
+                  Digital <br /> creative agency
+                </span>
+                <h1 className="ab-inner-hero-title tp-char-animation">
+                  Building your Presence
+                </h1>
+                <p>Jigjiga&apos;s First Full-Service Creative Agency</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="row justify-content-end">
-          <div className="col-xl-5 col-lg-8">
-            <div
-              className="ab-inner-hero-content"
-              data-lag="0.2"
-              data-stagger="0.08"
-            >
-              <p>
-                We don&apos;t just make things look <br /> good, We make businesses work better.
-              </p>
-              <Link className="tp-btn-white-sm border-style mt-30" href="#our-story">
-                Our Story
-              </Link>
+          <div className="row justify-content-end">
+            <div className="col-xl-5 col-lg-8">
+              <div
+                className="ab-inner-hero-content"
+                data-lag="0.2"
+                data-stagger="0.08"
+              >
+                <p>
+                  We don&apos;t just make things look <br /> good, We make businesses work better.
+                </p>
+                <Link className="tp-btn-white-sm border-style mt-30" href="#our-story">
+                  Our Story
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -9,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 // internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
-import { ServiceItems } from "@/components/service/service-five";
 import ServiceHero from "@/components/service/service-hero";
 import ServiceSix from "@/components/service/service-six";
 import { BrandItems } from "@/components/brand/brand-two";
@@ -49,23 +48,25 @@ const ServiceMain = () => {
             {/* service area */}
             <div className="tp-service-5-area sv-service-style pb-70">
               <div className="container container-1530">
-                <div className="row">
-                  <div className="col-xl-12">
-                    <div className="tp-service-5-title-box mb-90">
-                      <span className="ab-inner-subtitle mb-20">
-                        <Leaf />
-                        Services
-                      </span>
-                      <h4 className="tp-service-5-title">
-                        We strongly believe that only design reinforced by{" "}
-                        <br />
-                        strategy can provide real results.
-                      </h4>
+                <div className="ab-sticky-header-align">
+                  <div className="row justify-content-center">
+                    <div className="col-xxl-10 col-xl-10 col-lg-11">
+                      <div className="tp-service-5-title-box sv-service-intro-box mb-90">
+                        <span className="ab-inner-subtitle mb-20">
+                          <Leaf />
+                          Services
+                        </span>
+                        <h4
+                          className="tp-service-5-title sv-service-intro-text"
+                          style={{ fontSize: "clamp(38px, 5vw, 44px)", lineHeight: 1.08 }}
+                        >
+                          Prime Creative builds the content, digital systems and
+                          strategic campaigns businesses and enterprises use to grow,
+                          operate better, and reach the right audience.
+                        </h4>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="tp-service-5-wrap">
-                  <ServiceItems />
                 </div>
               </div>
             </div>

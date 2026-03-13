@@ -12,13 +12,16 @@ export default function MissionOne() {
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
-            <div className="tp-mission-title-box mb-80 text-center">
-              <h4 className="tp-about-5-title tp_fade_bottom p-relative">
-                <span className="tp-about-5-subtitle d-none d-lg-block tp_fade_left">
-                  Our vision
+            <div className="tp-mission-title-box text-center">
+              <div className="tp-mission-title-inner">
+                <span className="tp-mission-subtitle tp_fade_left">
+                  What we do
                 </span>
-                We Help Create <br /> and Supercharge Brands
-              </h4>
+                <h4 className="tp-about-5-title tp_fade_bottom">
+                  We Help Businesses <br /> and Organizations Communicate Better{" "}
+                  <br /> Operate Smarter <br /> and Stand Out.
+                </h4>
+              </div>
             </div>
           </div>
         </div>
@@ -36,10 +39,11 @@ export default function MissionOne() {
           <div className="col-xl-6 col-lg-6 col-md-6">
             <div className="tp-mission-content">
               <p className="tp_fade_bottom">
-                This is where data, know-how, and creativity meet design and
-                walk the path to success. Thinking as one, acting as one; always
-                by your side pushing boundaries. Our highly specialized approach
-                offers a wide spectrum of services.!
+                Founded in 2023, Prime Creative Agency was built on a simple
+                belief: businesses and organizations in Jigjiga deserve
+                world-class branding, production, marketing, and digital
+                systems that help them communicate clearly, operate smarter,
+                and grow with structure.
               </p>
               <div className="tp-hover-btn-wrapper tp_fade_bottom">
                 <Link

@@ -33,17 +33,17 @@ export default function ContactForm({btnCls=''}:IProps) {
     <form onSubmit={onSubmit}>
       <div className="cn-contactform-input mb-25">
         <label>Name</label>
-        <input id='name' {...register("name")} type="text" placeholder="John Doe" />
+        <input id='name' {...register("name")} type="text" placeholder="Your name" />
         <ErrorMsg msg={errors.name?.message!} />
       </div>
       <div className="cn-contactform-input mb-25">
         <label>Subject</label>
-        <input id='subject' {...register("subject")} type="text" placeholder="Your@email.com" />
+        <input id='subject' {...register("subject")} type="text" placeholder="Project inquiry" />
         <ErrorMsg msg={errors.subject?.message!} />
       </div>
       <div className="cn-contactform-input mb-25">
         <label>Message</label>
-        <textarea id='message' {...register("message")} placeholder="Tell Us About Your Project"></textarea>
+        <textarea id='message' {...register("message")} placeholder="Tell us about your project, goals, and timeline."></textarea>
         <ErrorMsg msg={errors.message?.message!} />
       </div>
       <div className="cn-contactform-btn">

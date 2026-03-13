@@ -23,40 +23,30 @@ export default function BlogDetailsAreaTwo() {
                 <div className="col-xl-8">
                   <div className="blog-details-top-text tp_fade_bottom">
                     <p>
-                      The metaverse can be viewed as an evolution of today’s
-                      internet, which in turn evolved from passive media that we
-                      simply consumed. In the age of radio and television, the
-                      consumer’s only job was to listen and decide if they
-                      wanted to buy.{" "}
+                      Strong brands do not rely on one impressive moment. They
+                      build trust through repeated clarity across identity,
+                      messaging, content, and digital experience.
                     </p>
                   </div>
                   <div className="blog-details-left-content tp_fade_bottom">
                     <p className="pb-40">
-                      The metaverse can be viewed as an evolution of today’s
-                      internet, which in turn evolved from passive media that we
-                      simply consumed. In the age of radio and television, the
-                      consumer’s only job was to listen and decide if they
-                      wanted to buy. While the internet added active
-                      participation and community-building, the metaverse adds
-                      total immersion and the power to co-create, trade, promote
-                      and even profit in ways never before imagined – bringing
-                      an entirely new level of complexity to the ways in which
-                      brands can interact with their target market.
+                      A clear brand makes better decisions possible. It helps
+                      teams know what to say, how to look, and what kind of
+                      experience they want people to have across campaigns,
+                      platforms, and day-to-day communication.
                     </p>
                     <h4 className="blog-details-left-title">
-                      What is Lorem Ipsum?
+                      Clarity before creativity
                     </h4>
                     <p className="mb-20">
-                      <span>Lorem Ipsum</span> is simply dummy text of the
-                      printing and typesetting industry. Lorem Ipsum has been
-                      the industry standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.
+                      Creativity works best when the strategic questions have
+                      already been answered. Teams move faster when they know
+                      their audience, message, and offer before production
+                      starts.
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting, remaining essentially
-                      unchanged
+                      That is what turns design and content from decoration into
+                      communication that actually supports growth.
                     </p>
                   </div>
                 </div>
@@ -92,13 +82,10 @@ export default function BlogDetailsAreaTwo() {
                       Relationship & Communication
                     </h4>
                     <p>
-                      But, like most politicians, he promised more than he could
-                      deliver. Why not indeed! Daylight and everything. And then
-                      the battle’s not so bad? Hello, little man. I will destroy
-                      you! No, I’m Santa Claus! Kif might! Man, I’m sore all
-                      over. I feel like I just went ten rounds with mighty Thor.
-                      I found what I need. And it’s not friends, it’s things.
-                      Then we’ll go with that data file!
+                      Communication is not just about promotion. It shapes how
+                      people understand the business, how confidently teams
+                      present the work, and how consistently the brand shows up
+                      over time.
                     </p>
                   </div>
                   <div className="blog-details-blockquote tp_fade_bottom">
@@ -114,12 +101,10 @@ export default function BlogDetailsAreaTwo() {
                   </div>
                   <div className="blog-details-left-content tp_fade_bottom">
                     <p>
-                      With any accomplished project, great time management is an
-                      essential component. We business owners hire product
-                      designers, they expect them to not only perform well, but
-                      also on time. At Stan Vision, we provide you with an
-                      experienced design team, led by an expert PM who knows how
-                      to prioritise your platform and product.
+                      Strong execution comes from structure. Once the direction
+                      is clear, teams can plan timelines better, reduce
+                      unnecessary revisions, and deliver work that feels more
+                      intentional.
                     </p>
                   </div>
                 </div>
@@ -142,19 +127,18 @@ export default function BlogDetailsAreaTwo() {
                 <div className="col-xl-8">
                   <div className="blog-details-left-content tp_fade_bottom">
                     <h4 className="blog-details-left-title">
-                      What is Lorem Ipsum?
+                      Turning strategy into delivery
                     </h4>
                     <p>
-                      <span>Lorem Ipsum</span> is simply dummy text of the
-                      printing and typesetting industry. Lorem Ipsum has been
-                      the industry standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.
+                      Great brand work becomes valuable when it is usable in the
+                      real world. That means systems, not just one-off visuals,
+                      and messaging people across the team can apply with
+                      confidence.
                     </p>
                     <p>
-                      It has survived not only five centuries, but also the leap
-                      into electronic typesetting, remaining essentially
-                      unchanged
+                      The goal is not only to look better. It is to make the
+                      business easier to understand, easier to market, and
+                      easier to grow.
                     </p>
                   </div>
                   <div className="blog-details-share-wrap mb-40">

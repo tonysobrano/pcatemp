@@ -2,31 +2,44 @@
 import React from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "@/plugins";
 import Image from "next/image";
 import shape from "@/assets/img/home-01/project/project-shape-1-1.png";
 
 const ProjectTextLine = () => {
-  useGSAP(() => {
-    gsap.set(".tp-project-textline", {
-      x: "25%",
-    });
+  const textLineRef = React.useRef<HTMLDivElement>(null);
 
-    gsap
-      .timeline({
+  useGSAP(
+    () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      if (!textLineRef.current) {
+        return;
+      }
+
+      gsap.set(textLineRef.current, {
+        xPercent: 20,
+        willChange: "transform",
+      });
+
+      gsap.to(textLineRef.current, {
+        xPercent: -80,
+        ease: "none",
         scrollTrigger: {
-          trigger: ".tp-project-textline ",
-          start: "-1500 10%",
-          end: "bottom 20%",
-          scrub: true,
+          trigger: textLineRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
           invalidateOnRefresh: true,
         },
-      })
-      .to(".tp-project-textline ", {
-        x: "-80%",
       });
-  });
+    },
+    { scope: textLineRef }
+  );
+
   return (
     <div
+      ref={textLineRef}
       className="tp-project-textline tp-project-effect mb-115"
       data-scrub="0.0001"
     >

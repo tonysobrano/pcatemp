@@ -65,7 +65,7 @@ export default function PortfolioDetailsThreeArea() {
             <div className="row">
                 <div className="col-xl-12">
                   <div className="tp-project-details-3-title-box">
-                      <h2 className="tp-section-title-160 mb-50 tp-char-animation">Mockups Google Pixel</h2>
+                      <h2 className="tp-section-title-160 mb-50 tp-char-animation">Brand Platform Refresh</h2>
                   </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@ export default function PortfolioDetailsThreeArea() {
             <div className="row">
                 <div className="col-xl-12">
                   <div className="showcase-details-2-section-box">
-                      <h4 className="showcase-details-2-section-title tp-char-animation">Daring Colors</h4>
+                      <h4 className="showcase-details-2-section-title tp-char-animation">Stronger First Impression</h4>
                   </div>
                 </div>
             </div>
@@ -122,8 +122,8 @@ export default function PortfolioDetailsThreeArea() {
                 </div>
                 <div className="col-xl-9">
                   <div className="showcase-details-2-content-right tp_title_anim">
-                      <p className="pb-25">Liko website was using a generic template, felt quite outdated and not in-line with the quality of his work. The main goal was to translate his high-end photography into a digital experience that would honor and present his work in a memorable and contemporary way.</p>
-                      <p>Each case study gets its own identity through the styling options in the custom content management system. The styling options are pre-defined</p>
+                      <p className="pb-25">The original site no longer reflected the quality of the work behind it, so the goal of this redesign was to create a sharper digital experience that feels modern, credible, and easier to navigate.</p>
+                      <p>The refresh focused on clarity, stronger visual hierarchy, and a more polished presentation of the work.</p>
                   </div>
                 </div>
             </div>
@@ -166,8 +166,8 @@ export default function PortfolioDetailsThreeArea() {
               </div>
               <div className="col-xl-9">
                 <div className="showcase-details-2-content-right tp_title_anim">
-                    <p className="pb-25">Liko website was using a generic template, felt quite outdated and not in-line with the quality of his work. The main goal was to translate his high-end photography into a digital experience that would honor and present his work in a memorable and contemporary way.</p>
-                    <p>Each case study gets its own identity through the styling options in the custom content management system. The styling options are pre-defined</p>
+                    <p className="pb-25">The project aimed to improve how the work was understood, not just how it looked. Navigation, layout, and storytelling were tightened to support that goal.</p>
+                    <p>The new structure helps visitors move from interest to inquiry with less friction.</p>
                 </div>
               </div>
           </div>
@@ -215,8 +215,8 @@ export default function PortfolioDetailsThreeArea() {
               </div>
               <div className="col-xl-9">
                 <div className="showcase-details-2-content-right tp_title_anim">
-                    <p className="pb-25">Liko website was using a generic template, felt quite outdated and not in-line with the quality of his work. The main goal was to translate his high-end photography into a digital experience that would honor and present his work in a memorable and contemporary way.</p>
-                    <p>Each case study gets its own identity through the styling options in the custom content management system. The styling options are pre-defined</p>
+                    <p className="pb-25">The final system was designed to stay flexible for future updates while keeping the brand presentation consistent across every case study and landing section.</p>
+                    <p>That makes it easier to grow the site without returning to a scattered template feel.</p>
                 </div>
               </div>
           </div>

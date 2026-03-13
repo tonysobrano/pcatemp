@@ -46,7 +46,7 @@ export default function FooterThree() {
                   </Link>
                 </div>
                 <div className="tp-footer-2-widget-text">
-                  <p>Drop us a line sed id semper <br /> risus in hend rerit.</p>
+                  <p>Built for brands that need stronger content, clearer systems, and better visibility.</p>
                 </div>
               </div>
             </div>
@@ -55,11 +55,11 @@ export default function FooterThree() {
                 <div className="tp-footer-2-widget-menu">
                   <h4 className="tp-footer-2-widget-title">Sitemap</h4>
                   <ul>
-                    <li><Link href="#">Home</Link></li>
-                    <li><Link href="#">About</Link></li>
-                    <li><Link href="#">Contact</Link></li>
-                    <li><Link href="#">Blog</Link></li>
-                    <li><Link href="#">Landing</Link></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/about-us">About</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
+                    <li><Link href="/blog-modern">Blog</Link></li>
+                    <li><Link href="/service">Services</Link></li>
                   </ul>
                 </div>
               </div>
@@ -68,13 +68,10 @@ export default function FooterThree() {
               <div className="tp-footer-2-widget footer-col-2-3">
                 <h4 className="tp-footer-2-widget-title">Office</h4>
                 <div className="tp-footer-2-contact-item">
-                  <span><Link href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu" target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</Link></span>
+                  <span><Link href="https://maps.google.com/?q=Jigjiga,Ethiopia" target="_blank">Jigjiga, Somali Region, Ethiopia</Link></span>
                 </div>
                 <div className="tp-footer-2-contact-item">
-                  <span><Link href="tel:+725214456">P: + 725 214 456</Link></span>
-                </div>
-                <div className="tp-footer-2-contact-item">
-                  <span><Link href="mailto:contact@liko.com">E: contact@liko.com</Link></span>
+                  <span><Link href="mailto:info@primecreative.agency">E: info@primecreative.agency</Link></span>
                 </div>
               </div>
             </div>
@@ -101,7 +98,7 @@ export default function FooterThree() {
           <div className="row align-items-center">
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
-                <p>All rights reserved — {new Date().getFullYear()} © Themepure</p>
+                <p>All rights reserved — {new Date().getFullYear()} © Prime Creative</p>
               </div>
             </div>
             <div className="col-xl-8 col-lg-7">

@@ -9,28 +9,32 @@ import { ITeamDT } from "@/types/team-d-t";
 import TeamModal from "../modal/team-modal";
 
 const slider_setting: SwiperOptions = {
-  slidesPerView: 6,
-  loop: true,
+  slidesPerView: 5,
+  loop: false,
   autoplay: false,
-  spaceBetween: 30,
+  watchOverflow: true,
+  spaceBetween: 24,
   breakpoints: {
     "1400": {
-      slidesPerView: 6,
+      slidesPerView: 5,
     },
     "1200": {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
     "992": {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
     "768": {
       slidesPerView: 3,
+      spaceBetween: 20,
     },
     "576": {
       slidesPerView: 2,
+      spaceBetween: 16,
     },
     "0": {
       slidesPerView: 1,
+      spaceBetween: 12,
     },
   },
 };

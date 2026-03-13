@@ -35,7 +35,7 @@ export default function LoginForm() {
             <label htmlFor="email">Your Email</label>
           </div>
           <div className="tp-login-input">
-            <input id="email" {...register("email")} type="email" placeholder="liko@mail.com" />
+            <input id="email" {...register("email")} type="email" placeholder="info@primecreative.agency" />
           </div>
           <ErrorMsg msg={errors.email?.message!} />
         </div>
@@ -83,7 +83,7 @@ export default function LoginForm() {
       </div>
       <div className="tp-login-bottom">
         <button type="submit" className="tp-login-btn w-100">
-          Login
+          Sign In
         </button>
       </div>
     </form>

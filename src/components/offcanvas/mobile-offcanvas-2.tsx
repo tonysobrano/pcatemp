@@ -65,8 +65,8 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
                 <Link href="tel:61404093954">+61404093 954</Link>
               </div>
               <div className="tpoffcanvas__mail">
-                <Link href="mailto:hellocontact@diego.com">
-                  hello contact@diego.com
+                <Link href="mailto:info@primecreative.agency">
+                  info@primecreative.agency
                 </Link>
               </div>
               <div className="tpoffcanvas__text">

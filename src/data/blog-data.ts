@@ -41,7 +41,7 @@ export const blog_home_five: IBlogDT[] = [
     title: "Future Business Ideas.",
     date: '01. FEB. 2023',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ export const blog_home_five: IBlogDT[] = [
     title: "Start Unique Experience.",
     date: '09. MAY. 2023',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const blog_home_five: IBlogDT[] = [
     title: "Is It Time To Rebrand?",
     date: '30. AUG. 2023',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export const blog_home_five: IBlogDT[] = [
     title: "Setting up the creativity.",
     date: '11. JAN. 2023',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   }
 ];
 
@@ -77,7 +77,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Our New Projects With <br> Local Community',
     date: '21. OCT. 2023',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 6,
@@ -85,7 +85,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Future Business Ideas.',
     date: '01. FEB. 2022',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 7,
@@ -93,7 +93,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Start Unique Experience.',
     date: '09. MAY. 2022',
     category: 'Branding / Creative',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Is It Time To Rebrand?',
     date: '30. AUG. 2022',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 9,
@@ -109,7 +109,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Setting up the creativity.',
     date: '11. JAN. 2022',
     category: 'Branding / Creative',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Design to remember',
     date: '15. OCT. 2023',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 11,
@@ -125,7 +125,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Endless Road Stories',
     date: '20. NOV. 2023',
     category: 'Branding / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
 
   {
@@ -134,7 +134,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Future Business Ideas.',
     date: '01. FEB. 2022',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 13,
@@ -142,7 +142,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Start Unique Experience.',
     date: '09. MAY. 2022',
     category: 'Branding / Creative',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 14,
@@ -150,7 +150,7 @@ export const blog_modern: IBlogDT[] = [
     title: 'Is It Time To Rebrand?',
     date: '30. AUG. 2022',
     category: 'Marketing / Strategy',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
 ];
 
@@ -161,7 +161,7 @@ export const blog_classic: IBlogDT[] = [
     title: "Relax while learning design and Be Connected",
     date: '27 JULY, 2022',
     category: 'BRANDING',
-    author: 'Mark Hopkins',
+    author: 'Prime Creative Team',
     avatar: avatar,
     blogHeroSlider: true,
   },
@@ -170,7 +170,7 @@ export const blog_classic: IBlogDT[] = [
     title: "Relax while learning design and Be Connected",
     date: '15 JUN, 2023',
     category: 'DESIGN',
-    author: 'John Vincent',
+    author: 'Prime Creative Team',
     avatar: avatar,
     blogHeroSlider: true,
   },
@@ -178,19 +178,19 @@ export const blog_classic: IBlogDT[] = [
     id: 17,
     img: blog_post_1,
     title: "Design To Remember",
-    desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.!',
+    desc: 'Why clear visual systems make brands easier to recognize, trust, and remember across every touchpoint.',
     date: '01 DEC, 2022',
     category: 'WORK',
-    author: 'Mark Hopkins',
+    author: 'Prime Creative Team',
   },
   {
     id: 18,
     img: blog_post_2,
     title: "Desert Treasure Hunt",
-    desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.!',
+    desc: 'Lessons from planning ambitious creative projects where logistics, timing, and storytelling all need to align.',
     date: '12 OCT, 2023',
     category: 'WORK',
-    author: 'Mark Hopkins',
+    author: 'Prime Creative Team',
     video: true,
     videoId: 'rVHxkxJM3rY'
   },
@@ -198,38 +198,38 @@ export const blog_classic: IBlogDT[] = [
     id: 19,
     blogQuoteTwo: true,
     title: "MERGE DIFFERENT TO CREATE A PERFECT <br/> PLAYLIST FOR EACH.",
-    desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.!',
+    desc: 'Creative direction works best when different ideas are shaped into one clear, usable message.',
     date: '01 DEC, 2022',
     category: 'WORK',
-    author: 'Mark Hopkins',
+    author: 'Prime Creative Team',
   },
   {
     id: 20,
     imgSlider: true,
     images: [blog_post_1, blog_post_2, blog_post_3],
     title: "Future Business Ideas.",
-    desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.!',
+    desc: 'A practical look at where growing businesses can gain leverage through better systems, content, and positioning.',
     date: '08 NOV, 2023',
     category: 'WORK',
-    author: 'Mark Hopkins',
+    author: 'Prime Creative Team',
   },
   {
     id: 21,
     blogQuote: true,
-    title: "SEM SMITH, CREATIVE DIRECTOR",
-    desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,uyam erat.!',
+    title: "NOTES FROM THE CREATIVE DIRECTOR",
+    desc: 'Short reflections on leadership, creative standards, and building work that lasts beyond a single launch.',
     date: '12 OCT, 2023',
     category: 'WORK',
-    author: 'Mark Hopkins',
+    author: 'Prime Creative Team',
   },
   {
     id: 22,
     img: blog_post_4,
     title: "Simplistic photo setup",
-    desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.!',
+    desc: 'How cleaner production setups can improve speed, consistency, and final output without unnecessary complexity.',
     date: '18 DEC, 2023',
     category: 'WORK',
-    author: 'Mark Hopkins',
+    author: 'Prime Creative Team',
   },
 ];
 
@@ -241,7 +241,7 @@ export const blog_lists: IBlogDT[] = [
     title: "Design To Remember",
     date: '01 DEC, 2023',
     category: 'Marketing',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 24,
@@ -249,7 +249,7 @@ export const blog_lists: IBlogDT[] = [
     title: "Simplistic photo setup",
     date: '09. MAY. 2023',
     category: 'Branding',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 25,
@@ -257,7 +257,7 @@ export const blog_lists: IBlogDT[] = [
     title: "Future Business Ideas.",
     date: '20. NOV. 2023',
     category: 'Branding',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 26,
@@ -265,7 +265,7 @@ export const blog_lists: IBlogDT[] = [
     title: "Is It Time To Rebrand?",
     date: '30. AUG. 2023',
     category: 'Branding',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 27,
@@ -273,7 +273,7 @@ export const blog_lists: IBlogDT[] = [
     title: "Desert Treasure Hunt",
     date: '09. MAY. 2023',
     category: 'Branding',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
   {
     id: 28,
@@ -281,7 +281,7 @@ export const blog_lists: IBlogDT[] = [
     title: "Visualizing Your Brand",
     date: '12. JAN. 2023',
     category: 'Branding',
-    author: 'John Doe',
+    author: 'Prime Creative Team',
   },
 ];
 

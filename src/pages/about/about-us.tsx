@@ -20,6 +20,8 @@ import AwardOne from "@/components/award/award-one";
 import { charAnimation, fadeAnimation, titleAnimation } from "@/utils/title-animation";
 import { hoverBtn } from "@/utils/hover-btn";
 import { teamMarqueAnim } from "@/utils/scroll-marque";
+import BrandOne from "@/components/brand/brand-one";
+import BrandTwo from "@/components/brand/brand-two";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -61,7 +63,7 @@ const AboutUsMain = () => {
             {/* fun fact area */}
 
             {/* brand area */}
-            <BrandFive />
+            <BrandTwo />
             {/* brand area */}
 
             {/* award area */}

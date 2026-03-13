@@ -14,39 +14,39 @@ type IFaq = {
 export const faq_data:IFaq[] = [
   {
     id: 1,
-    question: "What we do?",
+    question: "What services does Prime Creative offer?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "We provide production, branding and design, digital marketing, website and system development, and event support for businesses and organizations.",
   },
   {
     id: 2,
-    question: "How we do it?",
+    question: "Do you only work with businesses in Jigjiga?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "No. While Prime Creative is based in Jigjiga, we work with clients across East Africa and on remote projects where the scope can be managed digitally.",
   },
   {
     id: 3,
-    question: "How  can i download the products?",
+    question: "Can you handle both strategy and execution?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Yes. We support projects from planning and positioning through production, design, launch, and delivery so the final output stays consistent.",
   },
   {
     id: 4,
-    question: "Free Shipping  & Return Order",
+    question: "How long does a project usually take?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Timelines depend on scope. Smaller design or content jobs can move quickly, while larger brand, web, or event projects are planned in phases with clear milestones.",
   },
   {
     id: 5,
-    question: "Payment options",
+    question: "Do you work on retainers or one-off projects?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "We do both. Some clients need one focused deliverable, while others need ongoing support across campaigns, content, and digital operations.",
   },
   {
     id: 6,
-    question: "Best Quality Products",
+    question: "How do we get started?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Send us a message with your goals, timeline, and what you need help with. We will review the brief and recommend the right next step.",
   },
 ];
 
@@ -71,8 +71,9 @@ export default function FaqArea() {
               <div className="fq-faq-sidebar-content">
                 <h4 className="fq-faq-sidebar-title">Q&A</h4>
                 <p>
-                  Lorem ipsum dolor sit laud munere dicunt detraxit mel, nisl
-                  evertitu <br /> eu vim.
+                  Questions about scope, pricing, or timelines? Start with the
+                  answers here, then reach out if you need a more specific
+                  recommendation.
                 </p>
               </div>
               <div className="fq-faq-sidebar-thumb">
@@ -84,7 +85,7 @@ export default function FaqArea() {
                 />
               </div>
               <div className="fq-faq-sidebar-input p-relative">
-                <input type="text" placeholder="Search product" />
+                <input type="text" placeholder="Search questions" />
                 <button className="fq-faq-sidebar-search">
                   <Search />
                 </button>

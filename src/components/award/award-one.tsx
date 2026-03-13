@@ -30,14 +30,14 @@ const award_data = [
     id: 3,
     img: a_3,
     subtitle: "x1",
-    title: "Loki boundary pushing year in Review 2022",
+    title: "Boundary-pushing creative review 2022",
     date: "May 24, 2012",
   },
   {
     id: 4,
     img: a_4,
     subtitle: "x1",
-    title: "The New Liko Tools Website is Live.",
+    title: "The Prime Creative site relaunch is live.",
     date: "Sep 10, 2021",
   },
   {

@@ -1,48 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// images
-import s_1 from "@/assets/img/home-01/service/service-icon-1.png";
-import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
-import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
-
-const service_data = [
-  {
-    id: 1,
-    title: "Branding",
-    desc: "Branding is one of the most important ingredients for the success of any business.",
-    icon: s_2,
-  },
-  {
-    id: 2,
-    title: "Website design",
-    desc: "The perfect cocktail should still look and taste perfect no matter the size of the glass you serve it in.",
-    icon: s_1,
-  },
-  {
-    id: 3,
-    title: "Marketing",
-    desc: "We take that same approach with the apps & websites we create. you go there because of the overall experience.",
-    icon: s_3,
-  },
-];
+import { serviceItems } from "@/data/service-data";
 
 // service items
 export function ServiceItems() {
   return (
     <div className="row">
-      <div className="col-xxl-3"></div>
-      {service_data.map((item) => (
-        <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+      {serviceItems.map((item) => (
+        <div key={item.id} className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
           <div className="tp-service-5-item tp_fade_bottom space-1">
             <div className="tp-service-4-icon">
               <Image style={{ width: "auto", height: "auto" }} src={item.icon} alt="icon" />
             </div>
             <div className="tp-service-4-content">
               <h4 className="tp-service-4-title-sm tp-text-black">
-                <Link href="/service">{item.title}</Link>
+                <Link href={`/service/${item.slug}`}>{item.title}</Link>
               </h4>
-              <p>{item.desc}</p>
+              <p>{item.pageDescription}</p>
             </div>
           </div>
         </div>
@@ -64,8 +39,8 @@ export default function ServiceFive() {
                   SERVICES
                 </span>
                 <span className="text-space"></span>
-                Nullam posuere rhoncus elementum. Nullam lacinia <br />
-                urna blandit iaculis sagittis
+                Prime Creative delivers production, digital platforms, branding,
+                marketing, and event execution under one team.
               </h4>
             </div>
           </div>

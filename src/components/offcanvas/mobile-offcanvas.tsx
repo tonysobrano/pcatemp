@@ -45,8 +45,11 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }: IPr
           </div>
           <div className="tp-offcanvas-main">
             <div className="tp-offcanvas-content">
-              <h3 className="tp-offcanvas-title">Hello There!</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+              <h3 className="tp-offcanvas-title">Prime Creative</h3>
+              <p>
+                Production, marketing, branding, and digital systems built for
+                businesses that want to grow with clarity.
+              </p>
             </div>
             <div className="tp-main-menu-mobile d-xl-none">
               <MobileMenus />
@@ -69,13 +72,15 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }: IPr
 
               <ul>
                 <li>
-                  <Link href="tel:1245654">+ 4 20 7700 1007</Link>
+                  <Link href="mailto:info@primecreative.agency">info@primecreative.agency</Link>
                 </li>
                 <li>
-                  <Link href="mailto:hello@diego.com">hello@diego.com</Link>
+                  <Link href="https://maps.google.com/?q=Jigjiga,Ethiopia" target="_blank">
+                    Jigjiga, Ethiopia
+                  </Link>
                 </li>
                 <li>
-                  <Link href="#">Avenue de Roma 158b, Lisboa</Link>
+                  <Link href="/service">Explore our services</Link>
                 </li>
               </ul>
             </div>

@@ -33,7 +33,7 @@ export default function ReviewForm() {
             <label htmlFor="name">Name *</label>
           </div>
           <div className="tp-product-details-review-input">
-            <input name="name" id="name" type="text" placeholder="Farhan" />
+            <input name="name" id="name" type="text" placeholder="Your name" />
           </div>
         </div>
         <div className="tp-product-details-review-input-box">
@@ -45,7 +45,7 @@ export default function ReviewForm() {
               name="email"
               id="email"
               type="email"
-              placeholder="liko@mail.com"
+              placeholder="name@company.com"
             />
           </div>
         </div>

@@ -13,10 +13,15 @@ import ServiceDetailsArea from "@/components/service/service-details-area";
 import LineImgSlider from "@/components/line-text/line-img-slider";
 import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
+import type { ServiceItem } from "@/data/service-data";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
 
-const ServiceDetailsMain = () => {
+type ServiceDetailsMainProps = {
+  service: ServiceItem;
+};
+
+const ServiceDetailsMain = ({ service }: ServiceDetailsMainProps) => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -37,7 +42,7 @@ const ServiceDetailsMain = () => {
         <div id="smooth-content">
           <main>
             {/* service details area */}
-            <ServiceDetailsArea />
+            <ServiceDetailsArea service={service} />
             {/* service details area */}
 
             {/* line image slider  */}

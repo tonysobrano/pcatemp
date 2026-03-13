@@ -20,27 +20,26 @@ export default function BlogDetailsArea() {
             <div className="postbox__wrapper">
               <div className="blog-details-top-text">
                 <p>
-                  The metaverse can be viewed as an evolution of today’s
-                  internet, which in turn evolved from passive media that we
-                  simply consumed. In the age of radio and television, the
-                  consumer’s only job was to listen and decide if they wanted to
-                  buy.{" "}
+                  Strong brands are easier to trust because people can quickly
+                  understand who they are, what they offer, and why they
+                  matter. That clarity improves every campaign, platform, and
+                  customer interaction that follows.
                 </p>
               </div>
               <div className="blog-details-left-content">
                 <h4 className="blog-details-left-title">
-                  What is Lorem Ipsum?
+                  Why positioning matters
                 </h4>
                 <p className="mb-20">
-                  <span>Lorem Ipsum</span> is simply dummy text of the printing
-                  and typesetting industry. Lorem Ipsum has been the industry
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Positioning is the foundation that tells people how to
+                  understand a business. Before design systems, campaigns, or
+                  content calendars, teams need a clear point of view about
+                  their audience, value, and message.
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged
+                  When that foundation is missing, even polished creative work
+                  can feel inconsistent. When it is present, the brand becomes
+                  easier to remember and easier to trust.
                 </p>
               </div>
               <div className="blog-details-thumb-box">
@@ -70,13 +69,10 @@ export default function BlogDetailsArea() {
                   Relationship & Communication
                 </h4>
                 <p>
-                  But, like most politicians, he promised more than he could
-                  deliver. Why not indeed! Daylight and everything. And then the
-                  battle’s not so bad? Hello, little man. I will destroy you!
-                  No, I’m Santa Claus! Kif might! Man, I’m sore all over. I feel
-                  like I just went ten rounds with mighty Thor. I found what I
-                  need. And it’s not friends, it’s things. Then we’ll go with
-                  that data file!
+                  Brands grow through repetition and relationship. That means
+                  the language, visuals, and customer experience all need to
+                  reinforce the same message across touchpoints instead of
+                  competing with each other.
                 </p>
               </div>
               <div className="blog-details-blockquote">
@@ -90,12 +86,10 @@ export default function BlogDetailsArea() {
               </div>
               <div className="blog-details-left-content">
                 <p>
-                  With any accomplished project, great time management is an
-                  essential component. We business owners hire product
-                  designers, they expect them to not only perform well, but also
-                  on time. At Stan Vision, we provide you with an experienced
-                  design team, led by an expert PM who knows how to prioritise
-                  your platform and product.
+                  Execution matters just as much as direction. Strategy should
+                  make delivery faster by helping teams decide what belongs in
+                  the work, what can be simplified, and what should stay
+                  consistent from start to finish.
                 </p>
               </div>
               <div className="blog-details-thumb-box">
@@ -113,18 +107,17 @@ export default function BlogDetailsArea() {
               </div>
               <div className="blog-details-left-content">
                 <h4 className="blog-details-left-title">
-                  What is Lorem Ipsum?
+                  Consistency builds recall
                 </h4>
                 <p>
-                  <span>Lorem Ipsum</span> is simply dummy text of the printing
-                  and typesetting industry. Lorem Ipsum has been the industry
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  A recognizable brand is rarely the result of one dramatic
+                  asset. It usually comes from repeated decisions that align
+                  voice, visuals, offers, and user experience over time.
                 </p>
                 <p>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged
+                  That is why the strongest identities are not just attractive.
+                  They are usable, repeatable, and clear enough for teams to
+                  apply them everywhere the business shows up.
                 </p>
               </div>
               <div className="blog-details-share-wrap mb-40">
@@ -135,8 +128,9 @@ export default function BlogDetailsArea() {
                         <Tag />
                       </span>
                       <Link href="#">Creative</Link>
-                      <Link href="#">Photography</Link>
-                      <Link href="#">Lifestyle</Link>
+                      <Link href="#">Branding</Link>
+                      <Link href="#">Strategy</Link>
+                      <Link href="#">Digital</Link>
                     </div>
                   </div>
                   <div className="col-xl-4 col-lg-4">

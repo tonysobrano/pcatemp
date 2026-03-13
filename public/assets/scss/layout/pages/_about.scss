@@ -329,6 +329,34 @@
     }
 }
 .tp-mission{
+    &-title-box{
+        margin: 0 auto 96px;
+        text-align: center;
+    }
+    &-title-inner{
+        display: inline-block;
+        max-width: 1120px;
+        text-align: left;
+        & .tp-about-5-title{
+            display: block;
+            margin: 0;
+        }
+    }
+    &-subtitle{
+        display: block;
+        margin-bottom: 24px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1;
+        color: var(--tp-common-white);
+        text-transform: lowercase;
+        font-family: var(--tp-ff-body);
+        letter-spacing: normal;
+        @media #{$xs}{
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+    }
     &-content{
         padding-left: 70px;
         @media #{$md,$xs}{
@@ -585,7 +613,7 @@
         line-height: .9;
         letter-spacing: -9px;
         color: var(--tp-common-white);
-        transform: translateX(-12px);
+        transform: translateX(8px);
         margin-bottom: 30px;
         @media #{$xl}{
             font-size: 160px;
@@ -598,11 +626,19 @@
         }
         @media #{$xs}{
             font-size: 85px;
-            transform: translateX(-3px);
+            transform: translateX(0);
         }
     }
     &-title-box{
+        max-width: 1120px;
+        margin-left: clamp(120px, 10vw, 176px);
+        margin-top: -32px;
         margin-bottom: 205px;
+        @media #{$lg,$md,$xs}{
+            max-width: 100%;
+            margin-left: 0;
+            margin-top: 0;
+        }
         & p{
             font-size: 22px;
             font-weight: 500;
@@ -658,6 +694,18 @@
                 background-color: var(--tp-common-white);
             }
         }
+    }
+}
+.ab-sticky-header-align{
+    margin-left: calc(50% - 50vw + 60px);
+    margin-right: calc(50% - 50vw + 60px);
+    @media #{$xl}{
+        margin-left: calc(50% - 50vw + 30px);
+        margin-right: calc(50% - 50vw + 30px);
+    }
+    @media #{$lg,$md,$xs}{
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 .ab-about{
@@ -768,6 +816,30 @@
             padding-left: 100px;
             @media #{$md,$xs}{
                 padding-left: 0;
+            }
+        }
+        &-services{
+            &-title-box{
+                overflow: visible;
+            }
+            &-shape{
+                top: 46px;
+                left: 148px;
+                bottom: auto;
+                right: auto;
+                transform: none;
+                @media #{$xl}{
+                    left: 136px;
+                }
+                @media #{$lg}{
+                    top: 54px;
+                    left: 116px;
+                }
+                @media #{$md}{
+                    top: 62px;
+                    left: 84px;
+                    transform: scale(.92);
+                }
             }
         }
         &-list{

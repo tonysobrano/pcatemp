@@ -52,15 +52,16 @@ const BrandMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Prime Creative</span>
                         <h4 className="tm-hero-title tp-char-animation">
                           Our Sponsors
                         </h4>
                       </div>
                       <div className="tm-hero-text tp_title_anim">
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, orbi egestas lacus ac suscipit ovallis.
+                          Partnerships, sponsors, and collaborators that help
+                          Prime Creative deliver stronger campaigns and better
+                          results.
                         </p>
                       </div>
                     </div>

@@ -13,7 +13,7 @@ export default function PersonalInfoForm() {
               <input
                 type="text"
                 placeholder="Enter your username"
-                defaultValue="Farhan Firoz"
+                defaultValue="Your name"
               />
               <span>
                 <User />
@@ -42,7 +42,7 @@ export default function PersonalInfoForm() {
               <input
                 type="text"
                 placeholder="Enter username"
-                defaultValue="farhanfiroz"
+                defaultValue="@yourhandle"
               />
               <span>
                 <i className="fa-brands fa-facebook-f"></i>
@@ -56,7 +56,7 @@ export default function PersonalInfoForm() {
               <input
                 type="text"
                 placeholder="Enter username"
-                defaultValue="farhanfiroz"
+                defaultValue="@yourhandle"
               />
               <span>
                 <i className="fa-brands fa-twitter"></i>
@@ -70,7 +70,7 @@ export default function PersonalInfoForm() {
               <input
                 type="text"
                 placeholder="Enter your number"
-                defaultValue="0123 456 7889"
+                defaultValue="+251 ..."
               />
               <span>
                 <Phone />
@@ -101,7 +101,7 @@ export default function PersonalInfoForm() {
               <input
                 type="text"
                 placeholder="Enter your address"
-                defaultValue="3304 Randall Drive"
+                defaultValue="Your address"
               />
               <span>
                 <LocationTwo />

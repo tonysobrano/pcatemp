@@ -21,9 +21,9 @@ export default function FooterSix() {
                     </Link>
                   </div>
                   <div className="tp-footer-6-talk">
-                    <span>Got Questions? Call us</span>
+                    <span>Start a conversation</span>
                     <h4>
-                      <Link href="tel:+67041390762">+670 413 90 762</Link>
+                      <Link href="mailto:info@primecreative.agency">info@primecreative.agency</Link>
                     </h4>
                   </div>
                   <div className="tp-footer-6-contact">
@@ -34,7 +34,7 @@ export default function FooterSix() {
                         </span>
                       </div>
                       <div className="tp-footer-6-contact-content">
-                        <Link href="mailto:liko@gmail.com">liko@gmail.com</Link>
+                        <Link href="mailto:info@primecreative.agency">info@primecreative.agency</Link>
                       </div>
                     </div>
                     <div className="tp-footer-6-contact-item d-flex align-items-start">
@@ -44,10 +44,10 @@ export default function FooterSix() {
                         </span>
                       </div>
                       <div className="tp-footer-6-contact-content">
-                        <Link href="https://www.google.com/maps" target="_blank">
-                          79 Sleepy Hollow St.
+                        <Link href="https://maps.google.com/?q=Jigjiga,Ethiopia" target="_blank">
+                          Jigjiga, Somali Region
                           <br />
-                          Jamaica, New York 1432
+                          Ethiopia
                         </Link>
                       </div>
                     </div>
@@ -86,7 +86,7 @@ export default function FooterSix() {
               </div>
               <div className="col-xl-4 col-lg-5 col-md-6 col-sm-8 mb-60">
                 <div className="tp-footer-6-widget footer-col-6-4">
-                  <h4 className="tp-footer-6-widget-title">Subcribe.</h4>
+                  <h4 className="tp-footer-6-widget-title">Subscribe.</h4>
                   <div className="tp-footer-6-input-box">
                     <form action="#">
                       <label>Our conversation is just getting started</label>
@@ -119,7 +119,7 @@ export default function FooterSix() {
               <div className="col-xl-4 col-lg-5 col-md-6">
                 <div className="tp-copyright-2-left text-center text-md-start">
                   <p className="mb-0">
-                    All rights reserved — {new Date().getFullYear()} © Themepure
+                    All rights reserved — {new Date().getFullYear()} © Prime Creative
                   </p>
                 </div>
               </div>

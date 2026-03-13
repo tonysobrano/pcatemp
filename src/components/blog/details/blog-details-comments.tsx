@@ -9,28 +9,28 @@ import Link from "next/link";
 const comment_data = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Abdiqeni Rashid",
     avatar: avatar_1,
     date: "April 8, 2024 at 7:38 am",
     comment:
-      "Quisque est tortor, condimentum eget faucibus vel, condimentum quis felis. Nunc non orci augue. Pellentesque elementum gravida arcu.",
+      "Clear positioning really does make the rest of the communication easier. Once the message is sharp, the creative work has a much stronger direction.",
   },
   {
     id: 2,
     children: true,
     avatar: avatar_2,
-    name: "Mary Jane",
+    name: "Abdifetah Ahmed",
     date: "May 10, 2024 at 8:40 am",
     comment:
-      "Quisque est tortor, condimentum eget faucibus vel, condimentum quis felis. Nunc non orci augue. Pellentesque elementum gravida arcu.",
+      "Agreed. Teams often jump to visuals too early, but the strongest projects usually start with clarity on audience, offer, and desired action.",
   },
   {
     id: 3,
     avatar: avatar_1,
-    name: "Nancy Doe",
+    name: "Sakariya Hassen",
     date: "Feb 20, 2024 at 9:00 am",
     comment:
-      "Quisque est tortor, condimentum eget faucibus vel, condimentum quis felis. Nunc non orci augue. Pellentesque elementum gravida arcu.",
+      "The section on consistency is especially important. Repetition across content, design, and channels is what makes a brand feel intentional.",
   },
 ];
 

@@ -64,7 +64,7 @@ const PortfolioDetailsVideoMain = () => {
                               <div className="project-details-1-info-wrap mb-90 flex-wrap d-flex justify-content-between align-items-center">
                                  <div className="project-details-1-info">
                                     <span>Client</span>
-                                    <h4>LikoTheme</h4>
+                                    <h4>Prime Creative</h4>
                                  </div>
                                  <div className="project-details-1-info">
                                     <span>Date</span>
@@ -83,10 +83,10 @@ const PortfolioDetailsVideoMain = () => {
                               </div>
                            </div>
                            <div className="col-xl-12">
-                              <div className="project-details-1-title-box pb-50">
+                                 <div className="project-details-1-title-box pb-50">
                                  <span className="project-details-1-subtitle"><i>01</i>Shooting</span>
                                  <h4 className="project-details-1-title">Perspective</h4>
-                                 <p>Lorem ipsum dolor sit amet consectetur. Ultrices malesuada sed volutpat elit cum. Viverra dolor maecenas amet dui. Netus aliquet nunc netus cras eu eget erat risus. Ipsum ac imperdiet urna nunc. Rutrum lorem integer. Express the human touch and the artisanal approach that are central to the brand and ensure client project will be both totally unique and exceptionally well built. Present the huge selection of styles, </p>
+                                 <p>This visual case study highlights how direction, framing, and pacing shape the way a brand is perceived. The goal was to create a sharper, more premium presentation that feels intentional from the first second.</p>
                               </div>
                            </div>
                         </div>

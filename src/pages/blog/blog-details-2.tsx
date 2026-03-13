@@ -45,10 +45,10 @@ const BlogDetailsTwoMain = () => {
                     <div className="col-xl-12">
                       <div className="blog-details-content z-index-5">
                         <span className="blog-details-meta text-black">
-                          Creative
+                          Brand Strategy
                         </span>
                         <h4 className="blog-details-title tp-text-black tp-char-animation">
-                          Taking Your <br /> brand in the Metaverse
+                          Building a Brand <br /> People Remember
                         </h4>
                       </div>
                     </div>
@@ -60,12 +60,12 @@ const BlogDetailsTwoMain = () => {
                   <div className="row">
                     <div className="col-md-4">
                       <div className="blog-details-top-meta text-center">
-                        <span>Mark Hopkins</span>
+                        <span>Prime Creative Team</span>
                       </div>
                     </div>
                     <div className="col-md-4">
                       <div className="blog-details-top-meta text-center">
-                        <span>01 October, 2022</span>
+                        <span>01 October, 2024</span>
                       </div>
                     </div>
                     <div className="col-md-4">

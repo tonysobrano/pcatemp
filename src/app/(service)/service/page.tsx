@@ -3,7 +3,9 @@ import { Metadata } from "next";
 import ServiceMain from "@/pages/service/service";
 
 export const metadata: Metadata = {
-  title: "Liko - Service page",
+  title: "Services | Prime Creative",
+  description:
+    "Explore Prime Creative services across production, digital platforms, branding, marketing, and event management.",
 };
 
 const ServicePage = () => {

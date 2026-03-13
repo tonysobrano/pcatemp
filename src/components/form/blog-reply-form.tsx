@@ -18,14 +18,14 @@ export default function BlogReplyForm() {
           <div className="col-xl-6">
             <div className="tp-postbox-details-input-box">
               <div className="tp-postbox-details-input">
-                <input type="text" placeholder="Farhan Firoz" />
+                <input type="text" placeholder="Your name" />
               </div>
             </div>
           </div>
           <div className="col-xl-6">
             <div className="tp-postbox-details-input-box">
               <div className="tp-postbox-details-input">
-                <input type="email" placeholder="liko@mail.com" />
+                <input type="email" placeholder="name@company.com" />
               </div>
             </div>
           </div>

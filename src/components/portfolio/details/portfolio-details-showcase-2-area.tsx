@@ -44,9 +44,10 @@ export default function PortfolioDetailsShowcaseTwoArea() {
                   </div>
                   <div className="col-xxl-7 col-xl-10">
                       <div className="showcase-details-2-content tp_title_anim">
-                        <p>Lorem ipsum dolor sit amet consectetur. Ultrices
-                            malesuada sed volutpat elit cum. Viverra dolor
-                            maecenas amet dui Netus aliquet.!</p>
+                        <p>
+                          A brand and website refresh designed to present the
+                          work with more clarity, confidence, and structure.
+                        </p>
                       </div>
                       <div className="showcase-details-2-info-wrap d-flex align-items-center justify-content-between">
                         <div className="showcase-details-2-info tp_fade_bottom">
@@ -94,7 +95,7 @@ export default function PortfolioDetailsShowcaseTwoArea() {
                 </div>
                 <div className="col-xl-9">
                   <div className="showcase-details-2-section-right tp_title_anim">
-                      <p>Liko website was using a generic template, felt quite outdated and not in-line with the quality of his work. The main goal was to translate his high-end photography into a digital experience that would honor and present his work in a memorable and contemporary way.</p>
+                      <p>The original site no longer reflected the quality of the work behind it, so the goal of this redesign was to create a sharper digital experience that feels modern, credible, and easier to navigate.</p>
                   </div>
                 </div>
             </div>
@@ -147,8 +148,8 @@ export default function PortfolioDetailsShowcaseTwoArea() {
                 </div>
                 <div className="col-xl-9">
                   <div className="showcase-details-2-content-right tp_title_anim">
-                      <p className="pb-25">Liko website was using a generic template, felt quite outdated and not in-line with the quality of his work. The main goal was to translate his high-end photography into a digital experience that would honor and present his work in a memorable and contemporary way.</p>
-                      <p>Each case study gets its own identity through the styling options in the custom content management system. The styling options are pre-defined</p>
+                      <p className="pb-25">The original site no longer reflected the quality of the work behind it, so the goal of this redesign was to create a sharper digital experience that feels modern, credible, and easier to navigate.</p>
+                      <p>The structure gives each case study room to feel distinct while still staying inside one clear visual system.</p>
                   </div>
                 </div>
             </div>
@@ -183,7 +184,7 @@ export default function PortfolioDetailsShowcaseTwoArea() {
                 </div>
                 <div className="col-xl-9">
                   <div className="showcase-details-2-content-right tp_title_anim">
-                      <p>The journey of visiting Khajuraho and mapping out all temples for the Khajuraho Digital Expo by HASPR was a truly immersive experience. Our team was tasked with capturing the essence of the UNESCO World Heritage Site and bringing it to life through digital technology.</p>
+                      <p>Planning focused on content hierarchy, case study flow, and visual pacing so visitors could understand the offer quickly without losing the premium feel of the brand.</p>
                   </div>
                 </div>
             </div>
@@ -224,7 +225,7 @@ export default function PortfolioDetailsShowcaseTwoArea() {
                 </div>
                 <div className="col-xl-9">
                   <div className="showcase-details-2-content-right tp_title_anim">
-                      <p>Each case study gets its own identity through the styling options in the custom content management system. The styling options are pre-defined by our design team to makes sure the website looks amazing in every composition.</p>
+                      <p>The final system balances flexibility and consistency, making it easier to publish new work while keeping the overall brand experience cohesive.</p>
                   </div>
                 </div>
             </div>

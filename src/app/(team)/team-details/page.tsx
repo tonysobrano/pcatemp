@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Liko - Team Details page",
+  title: "Prime Creative - Team Details page",
 };
 
 const page = () => {

@@ -4,6 +4,23 @@ import Link from "next/link";
 import logo from "@/assets/img/logo/logo-white.png";
 import logo_2 from "@/assets/img/logo/logo.png";
 import { RightArrow } from "@/components/svg";
+import { serviceItems } from "@/data/service-data";
+
+function formatFooterServiceTitle(title: string) {
+  return title
+    .split(" ")
+    .map((word, index) => {
+      if (word === "&") {
+        return word;
+      }
+
+      const normalizedWord = word.toLowerCase();
+      return index === 0
+        ? normalizedWord.charAt(0).toUpperCase() + normalizedWord.slice(1)
+        : normalizedWord;
+    })
+    .join(" ");
+}
 
 // prop type
 type IProps = {
@@ -19,8 +36,9 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
           whiteFooter ? "tp-footer-white" : "black-bg"
         }`}
       >
-        <div className="container container-1480">
-          <div className="row">
+        <div className="container">
+          <div className="ab-sticky-header-align">
+            <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-6 mb-50">
               <div className="tp-footer-2-widget footer-col-2-1">
                 {!whiteFooter && (
@@ -54,9 +72,9 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                   <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about-us">About</Link></li>
-                    <li><Link href="/parallax-slider">Work</Link></li>
-                    <li><Link href="/blog-modern">Blog</Link></li>
-                    <li><Link href="/contact-2">Contact</Link></li>
+                    <li><Link href="/service">Services</Link></li>
+                    <li><Link href="/work">Work</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                   </ul>
                 </div>
               </div>
@@ -66,11 +84,13 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 <h4 className="tp-footer-2-widget-title">Services</h4>
                 <div className="tp-footer-2-widget-menu">
                   <ul>
-                    <li><Link href="/service">Branding &amp; Identity</Link></li>
-                    <li><Link href="/service">Graphic Design</Link></li>
-                    <li><Link href="/service">Video Production</Link></li>
-                    <li><Link href="/service">Web Design &amp; Dev</Link></li>
-                    <li><Link href="/service">Digital Marketing</Link></li>
+                    {serviceItems.map((service) => (
+                      <li key={service.slug}>
+                        <Link href={`/service/${service.slug}`}>
+                          {formatFooterServiceTitle(service.title)}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -92,6 +112,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -101,8 +122,9 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
           whiteFooter ? "tp-copyright-white" : "black-bg"
         }`}
       >
-        <div className="container container-1480">
-          <div className="row align-items-center">
+        <div className="container">
+          <div className="ab-sticky-header-align">
+            <div className="row align-items-center">
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
                 <p>
@@ -116,6 +138,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 <Link className="mb-10" href="#">tiktok</Link>
                 <Link className="mb-10" href="#">facebook</Link>
               </div>
+            </div>
             </div>
           </div>
         </div>

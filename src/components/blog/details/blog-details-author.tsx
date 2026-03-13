@@ -26,10 +26,10 @@ export default function BlogDetailsAuthor() {
           </Link>
         </div>
         <div className="blog-details-author-content">
-          <h4 className="blog-details-author-title">Lea Cohen</h4>
+          <h4 className="blog-details-author-title">Prime Creative Team</h4>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor.!
+            Practical ideas on branding, communication, production, and digital
+            growth from the Prime Creative team.
           </p>
         </div>
       </div>

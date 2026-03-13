@@ -47,11 +47,12 @@ export default function InstagramArea() {
         <div className="tp-instagram-content-wrap text-start">
           <div className="tp-instagram-title-box">
             <span className="tp-instagram-subtitle">INSTAGRAM</span>
-            <h4 className="tp-instagram-title">@likoagency</h4>
+            <h4 className="tp-instagram-title">@primecreativeagency</h4>
           </div>
           <div className="tp-instagram-content">
             <p>
-              Become a part of our stories! <br /> Join the adventure.
+              Follow our latest work, behind-the-scenes moments, and campaign
+              highlights.
             </p>
             <Link className="tp-btn-white background-black" href="#">
               Follow Us

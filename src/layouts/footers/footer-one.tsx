@@ -43,7 +43,7 @@ export default function FooterOne() {
               <div className="col-xl-5 col-lg-6">
                 <div className="tp-footer-middle-wrap">
                   <div className="tp-footer-content">
-                    <h4 className="tp-footer-big-title footer-big-text">{"Let's"} Contact!</h4>
+                    <h4 className="tp-footer-big-title footer-big-text">{"Let's"} Talk.</h4>
                   </div>
                   <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6">
@@ -53,16 +53,16 @@ export default function FooterOne() {
                         </h4>
                         <div className="tp-footer-widget-info">
                           <div className="tp-footer-widget-info-mail tp_fade_bottom">
-                            <Link href="mailto:contact@agency.com">
-                              contact@agency.com
+                            <Link href="mailto:info@primecreative.agency">
+                              info@primecreative.agency
                             </Link>
                           </div>
                           <div className="tp-footer-widget-info-location tp_fade_bottom">
                             <Link
-                              href="https://www.google.com/maps/@54.581385,-101.7562167,7.5z?entry=ttu"
+                              href="https://maps.google.com/?q=Jigjiga,Ethiopia"
                               target="_blank"
                             >
-                              389 Street St. <br /> San Francisco,CA
+                              Jigjiga, Somali Region <br /> Ethiopia
                             </Link>
                           </div>
                         </div>
@@ -71,7 +71,7 @@ export default function FooterOne() {
                     <div className="col-xl-6 col-lg-6 col-md-6">
                       <div className="tp-footer-widget">
                         <h4 className="tp-footer-title tp_fade_bottom">
-                          Stalk us
+                          Follow us
                         </h4>
                         <ul className="tp-footer-widget-social">
                           <li className="tp_fade_bottom">
@@ -111,8 +111,7 @@ export default function FooterOne() {
               <div className="col-xl-6 col-md-8">
                 <div className="tp-copyright-text text-center text-md-end">
                   <p>
-                    Copyright © {new Date().getFullYear()} Themepure. All rights
-                    reserved.
+                    Copyright © {new Date().getFullYear()} Prime Creative. All rights reserved.
                   </p>
                 </div>
               </div>

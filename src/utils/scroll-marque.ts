@@ -4,8 +4,12 @@ import $ from "jquery";
 function teamMarqueAnim() {
   const teamItem = document.querySelector(".tp-team-item");
   if (teamItem) {
+    const isLargeScreen = window.innerWidth >= 992;
+    const startX = isLargeScreen ? "0%" : "25%";
+    const endX = isLargeScreen ? "-12%" : "-100%";
+
     gsap.set(".tp-team-item.marque", {
-      x: "25%",
+      x: startX,
     });
 
     gsap
@@ -19,7 +23,7 @@ function teamMarqueAnim() {
         },
       })
       .to(".tp-team-item.marque ", {
-        x: "-100%",
+        x: endX,
       });
   }
 }

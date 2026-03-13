@@ -22,7 +22,7 @@ export default function FooterFive() {
                   <Link className="tp-footer-5-mail" href="mailto:info@primecreative.agency">
                     info@primecreative.agency
                   </Link>
-                  <Link className="tp-footer-5-link" href="#">
+                  <Link className="tp-footer-5-link" href="/contact">
                     <UpArrow clr="#19191A" />
                   </Link>
                 </div>

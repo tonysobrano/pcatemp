@@ -16,8 +16,8 @@ export default function BlogSidebar() {
             <Image src={avatar} alt="avatar" style={{ height: "auto" }} />
           </div>
           <div className="sidebar__author-content">
-            <h4 className="sidebar__author-title">Mark Hopkins</h4>
-            <p>Lorem ipsum dolor consectetur adipiscing elit.</p>
+            <h4 className="sidebar__author-title">Prime Creative Team</h4>
+            <p>Insights on branding, production, digital growth, and communication.</p>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@ export default function BlogSidebar() {
           <div className="sidebar__search">
             <form action="#">
               <div className="sidebar__search-input-2">
-                <input type="text" placeholder="Search product" />
+                <input type="text" placeholder="Search articles" />
                 <button type="submit">
                   <Search />
                 </button>

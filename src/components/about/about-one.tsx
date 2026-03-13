@@ -15,8 +15,8 @@ const AboutOne = () => {
           <div className="col-xxl-8 col-xl-10">
             <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-70 text-start text-xl-center">
               <h2 className="tp-about-2-section-title">
-                Cooperation is possible within
-                various shapes and formats
+                We build partnerships that fit the scale, speed, and structure
+                each project actually needs.
               </h2>
             </div>
           </div>
@@ -29,19 +29,21 @@ const AboutOne = () => {
               </div>
               <div className="tp-about-2-thumb-inner">
                 <Image style={{width:"100%", height:"auto"}} width={221} height={278}  src={ab_2} alt="ab-img" />
-                <span className="tp-about-2-thumb-text">I’M A SUNGLASSES INFLUENCER</span>
+                <span className="tp-about-2-thumb-text">CREATIVE, DIGITAL, AND PRODUCTION</span>
               </div>
             </div>
           </div>
           <div className="col-xl-5 col-lg-12 order-0 order-xl-1">
             <div className="tp-about-2-content">
-              <span>FOLLOW FOR THE BEST EYEWEAR INSPIRATION</span>
+              <span>STRUCTURED SUPPORT FOR GROWING BRANDS</span>
               <p className="mb-30">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                Some clients need a single campaign. Others need a long-term
+                creative partner who can handle strategy, design, content, and
+                digital execution under one workflow.
               </p>
               <p className="mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt .!
+                We shape the process around what will actually help the business
+                communicate clearly, operate better, and show up consistently.
               </p>
             </div>
           </div>

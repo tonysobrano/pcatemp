@@ -174,8 +174,8 @@ const BrandTwo = () => {
                 Our Clients
               </span>
               <h4 className="tp-section-title-40 font-style-2">
-                We love to work with clients to develop unique, innovative
-                websites.
+                We partner with clients to build clear, modern websites and
+                digital experiences.
               </h4>
             </div>
           </div>

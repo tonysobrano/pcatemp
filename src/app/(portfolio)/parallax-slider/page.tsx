@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import ParallaxSliderMain from "@/pages/portfolio/parallax-slider-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Parallax Slider page",
+  title: "Prime Creative - Parallax Slider page",
 };
 
 const ParallaxSliderPage = () => {

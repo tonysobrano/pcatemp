@@ -127,11 +127,11 @@ export default function BlogClassicArea() {
                           <QuoteTwo />
                         </span>
                         <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr,uyam erat.!
+                          Strong creative work becomes more valuable when it is
+                          supported by clear positioning and consistent delivery.
                         </p>
                         <span className="postbox__blockquote-info">
-                          SEM SMITH, CREATIVE DIRECTOR
+                          PRIME CREATIVE, CREATIVE DIRECTOR
                         </span>
                       </blockquote>
                     </div>

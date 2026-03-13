@@ -1,13 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { serviceItems, type ServiceItem } from "@/data/service-data";
 
 // images
-import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
 import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
 import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
 
-export default function ServiceDetailsArea() {
+type ServiceDetailsAreaProps = {
+  service: ServiceItem;
+};
+
+export default function ServiceDetailsArea({ service }: ServiceDetailsAreaProps) {
   return (
     <div className="service-details__area service-details__space pt-200 pb-120">
       <div className="container">
@@ -15,26 +19,24 @@ export default function ServiceDetailsArea() {
           <div className="col-xl-12">
             <div className="service-details__title-box mb-40">
               <span className="service-details__subtitle tp-char-animation">
-                Design Studio
+                {service.subtitle}
               </span>
               <h4 className="sv-hero-title tp-char-animation">
-                Logo and branding
+                {service.title}
               </h4>
             </div>
           </div>
           <div className="row">
             <div className="offset-xl-4 col-xl-5">
               <div className="service-details__banner-text mb-80">
-                <p className="mb-30 tp_title_anim">
-                  Branding is essential to establish yourself in the market
-                  <br /> in a unique and permanent way. At Riveal, we attach{" "}
-                  <br /> great importance. We seek to understand your business
-                  to better convey your values ​​and your talent <br /> through
-                  your brand image.{" "}
-                </p>
-                <p className="tp_title_anim">
-                  Explore our achievements and let yourself be <br /> convinced!
-                </p>
+                {service.overview.map((paragraph, index) => (
+                  <p
+                    key={paragraph}
+                    className={index === 0 ? "mb-30 tp_title_anim" : "tp_title_anim"}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -47,7 +49,7 @@ export default function ServiceDetailsArea() {
               <div className="service-details__tab-thumb">
                 <Image
                   data-speed="0.4"
-                  src={sv_1}
+                  src={service.image}
                   alt="service-img"
                   style={{ height: "auto" }}
                 />
@@ -62,24 +64,15 @@ export default function ServiceDetailsArea() {
             <div className="service-details__left-wrap">
               <div className="service-details__left-text pb-20">
                 <p className="text-1 tp_title_anim">
-                  Your logo is at the heart of your identity. An impactful
-                  design, tailor-made and in line with your activity will allow
-                  you to differentiate yourself and mark your audience.
+                  {service.lead}
                 </p>
-                <p>
-                  Great user experience design lets users focus on the task they
-                  have to complete and evokes emotion without distracting them.!
-                </p>
+                <p>{service.pageDescription}</p>
               </div>
               <div className="service-details__fea-list">
                 <ul>
-                  <li>Graphic research and production</li>
-                  <li>Presentation of your logo on different media</li>
-                  <li>
-                    Advice on the graphic orientation of your logo or its
-                    redesign
-                  </li>
-                  <li>Delivery of your logo in professional formats</li>
+                  {service.capabilities.map((capability) => (
+                    <li key={capability}>{capability}</li>
+                  ))}
                 </ul>
               </div>
               <div className="service-details__sm-thumb-wrap mb-60">
@@ -105,12 +98,7 @@ export default function ServiceDetailsArea() {
                 </div>
               </div>
               <div className="service-details__left-text">
-                <p>
-                  Great user experience design lets users focus on the task they
-                  have to complete & evokes emotion without distracting them.
-                  Bonus points for when it also looks & feels aesthetically
-                  pleasing!{" "}
-                </p>
+                <p>{service.closing}</p>
               </div>
             </div>
           </div>
@@ -120,22 +108,20 @@ export default function ServiceDetailsArea() {
                 <span>Full list of services</span>
               </div>
               <div className="service-details__right-category">
-                <Link href="#">Strategy</Link>
-                <Link className="active" href="#">
-                  Logo Design
-                </Link>
-                <Link href="#">Graphic identity</Link>
-                <Link href="#">Web Design</Link>
-                <Link href="#">Development</Link>
+                {serviceItems.map((item) => (
+                  <Link
+                    key={item.slug}
+                    className={item.slug === service.slug ? "active" : ""}
+                    href={`/service/${item.slug}`}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
               </div>
               <div className="service-details__right-text-box">
-                <h4>
-                  Logo <br /> Design
-                </h4>
+                <h4>{service.title}</h4>
                 <p className="mb-20">
-                  Your logo is at the heart of your identity. An impactful
-                  design, tailor-made and in line with your activity will allow
-                  you to differentiate yourself and mark your audience.
+                  {service.contactPrompt}
                 </p>
                 <Link
                   className="tp-btn-white background-black"

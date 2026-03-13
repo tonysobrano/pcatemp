@@ -11,32 +11,35 @@ const location_data = [
   {
     id: 1,
     img: location_1,
-    country: "France",
-    time: "12:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
+    country: "Jigjiga",
+    time: "East Africa Time (UTC+3)",
+    location_title: "Prime Creative HQ",
+    address: "Jigjiga, Somali Region <br /> Ethiopia",
+    link: "https://maps.google.com/?q=Jigjiga,Ethiopia",
+    linkLabel: "View location",
+    email: "info@primecreative.agency",
   },
   {
     id: 2,
     img: location_2,
-    country: "Germany",
-    time: "11:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
+    country: "Remote Projects",
+    time: "Available across East Africa and beyond",
+    location_title: "Digital Delivery",
+    address: "Remote collaboration for campaigns, <br /> systems, and content production",
+    link: "/service",
+    linkLabel: "See services",
+    email: "info@primecreative.agency",
   },
   {
     id: 3,
     img: location_3,
-    country: "New Zealand",
-    time: "10:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
+    country: "Partnerships",
+    time: "Campaigns, events, and collaborations",
+    location_title: "Business Inquiries",
+    address: "For partnerships, media, and long-term <br /> collaborations, reach out directly",
+    link: "mailto:info@primecreative.agency",
+    linkLabel: "Contact by email",
+    email: "info@primecreative.agency",
   },
 ];
 
@@ -70,18 +73,17 @@ const ContactLocation = () => {
                           {item.location_title}
                         </span>
                         <Link
-                          href="https://www.google.com/maps"
+                          href={item.link}
                           target="_blank"
                           dangerouslySetInnerHTML={{ __html: item.address }}
                         ></Link>
                       </div>
                       <div className="cn-contact-map">
-                        <Link href="#">Google Maps</Link>
+                        <Link href={item.link} target="_blank">{item.linkLabel}</Link>
                       </div>
                     </div>
                     <div className="cn-contact-right-info text-start text-md-end">
-                      <Link href="tel:(+91)76001726">{item.phone}</Link> <br />
-                      <Link href="mailto:Hello@contact.com">{item.email}</Link>
+                      <Link href={`mailto:${item.email}`}>{item.email}</Link>
                     </div>
                   </div>
                 </div>

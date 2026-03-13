@@ -9,7 +9,7 @@ import Wrapper from "@/layouts/wrapper";
 import HeaderOne from "@/layouts/headers/header-one";
 import HeroBannerFour from "@/components/hero-banner/hero-banner-four";
 import VideoThree from "@/components/video/video-three";
-import AboutThree from "@/components/about/about-three";
+import MissionOne from "@/components/mission/mission-one";
 import ServiceOne from "@/components/service/service-one";
 import ProjectOne from "@/components/project/project-one";
 import BrandTwo from "@/components/brand/brand-two";
@@ -59,11 +59,11 @@ const HomeMain = () => {
           <main>
             <HeroBannerFour />
             <VideoThree />
-            <AboutThree />
+            <MissionOne />
             <ServiceOne />
             <ProjectOne />
             <BrandTwo />
-            <TeamOne />
+            <TeamOne spacing="pt-120" />
           </main>
 
           <FooterFive />
