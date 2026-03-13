@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ServiceDetailsMain from "@/pages/service/service-details";
+import ServiceDetailsMain from "@/components/service/service-details-main";
 import { getServiceBySlug, serviceItems } from "@/data/service-data";
 
 type ServicePageProps = {
