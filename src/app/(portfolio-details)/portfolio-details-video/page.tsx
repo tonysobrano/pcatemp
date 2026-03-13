@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import PortfolioDetailsVideoMain from "@/pages/portfolio/details/portfolio-details-video-main";
+import PortfolioDetailsVideoMain from "@/page-views/portfolio/details/portfolio-details-video-main";
 
 
 export const metadata: Metadata = {

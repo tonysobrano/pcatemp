@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import PortfolioShowcaseMain from "@/pages/portfolio/portfolio-showcase-main";
+import PortfolioShowcaseMain from "@/page-views/portfolio/portfolio-showcase-main";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Portfolio Showcase page",

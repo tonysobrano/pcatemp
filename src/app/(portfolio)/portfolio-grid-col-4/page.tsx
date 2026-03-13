@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import PortfolioGridColFourMain from "@/pages/portfolio/portfolio-grid-col-4-main";
+import PortfolioGridColFourMain from "@/page-views/portfolio/portfolio-grid-col-4-main";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Portfolio Grid Col 4 page",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import BlogListMain from "@/pages/blog/blog-list";
+import BlogListMain from "@/page-views/blog/blog-list";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Blog List page",

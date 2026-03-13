@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import ServiceMain from "@/pages/service/service";
+import ServiceMain from "@/page-views/service/service";
 
 export const metadata: Metadata = {
   title: "Services | Prime Creative",

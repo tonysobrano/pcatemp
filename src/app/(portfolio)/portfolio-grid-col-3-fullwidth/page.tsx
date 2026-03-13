@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import PortfolioGridColThreeFullwidthMain from "@/pages/portfolio/portfolio-grid-col-3-fullwidth-main";
+import PortfolioGridColThreeFullwidthMain from "@/page-views/portfolio/portfolio-grid-col-3-fullwidth-main";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Portfolio Masonry page",

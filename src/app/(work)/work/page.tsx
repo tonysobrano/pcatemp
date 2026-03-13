@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import WorkMain from "@/pages/work/work-main";
+import WorkMain from "@/page-views/work/work-main";
 
 export const metadata: Metadata = {
   title: "Work | Prime Creative",

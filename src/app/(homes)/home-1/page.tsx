@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import HomeMain from "@/pages/homes/home-1";
+import HomeMain from "@/page-views/homes/home-1";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Jigjiga's First Full-Service Creative Agency",

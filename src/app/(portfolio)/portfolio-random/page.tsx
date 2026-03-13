@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import PortfolioRandomMain from "@/pages/portfolio/portfolio-random-main";
+import PortfolioRandomMain from "@/page-views/portfolio/portfolio-random-main";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Portfolio Random page",

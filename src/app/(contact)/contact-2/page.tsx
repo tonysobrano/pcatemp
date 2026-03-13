@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import ContactTwoMain from "@/pages/contact/contact-2";
+import ContactTwoMain from "@/page-views/contact/contact-2";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Contact 2 Page",

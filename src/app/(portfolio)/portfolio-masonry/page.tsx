@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import PortfolioMasonryMain from "@/pages/portfolio/portfolio-masonry-main";
+import PortfolioMasonryMain from "@/page-views/portfolio/portfolio-masonry-main";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Portfolio Masonry page",

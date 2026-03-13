@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import FaqMain from "@/pages/faq/faq-main";
+import FaqMain from "@/page-views/faq/faq-main";
 
 export const metadata: Metadata = {
   title: "Prime Creative - Faq page",
