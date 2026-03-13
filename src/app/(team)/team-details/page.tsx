@@ -1,4 +1,4 @@
-import TeamDetailsMain from '@/pages/team/team-details';
+import TeamDetailsMain from '@/components/team/team-details-main';
 import { Metadata } from 'next';
 import React from 'react';
 

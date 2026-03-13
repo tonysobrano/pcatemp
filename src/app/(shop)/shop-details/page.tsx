@@ -1,5 +1,5 @@
 
-import ShopDetailsMain from '@/pages/shop/shop-details-main';
+import ShopDetailsMain from '@/components/shop/shop-details-main';
 import { Metadata } from 'next';
 import React from 'react';
 

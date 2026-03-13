@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import WorkDetailsMain from "@/pages/work/work-details-main";
+import WorkDetailsMain from "@/components/work/work-details-main";
 import { getWorkBySlug, workItems } from "@/data/work-data";
 
 type WorkPageProps = {

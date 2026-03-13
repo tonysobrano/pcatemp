@@ -1,4 +1,4 @@
-import ShopDetailsMain from '@/pages/shop/shop-details-main';
+import ShopDetailsMain from '@/components/shop/shop-details-main';
 import { PageParamsProps } from '@/types/custom-d-t';
 import product_data from '@/data/product-data';
 import React from 'react';

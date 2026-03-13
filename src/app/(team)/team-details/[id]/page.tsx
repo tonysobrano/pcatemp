@@ -1,6 +1,6 @@
 
 import team_data from '@/data/team-data';
-import TeamDetailsMain from '@/pages/team/team-details';
+import TeamDetailsMain from '@/components/team/team-details-main';
 import { PageParamsProps } from '@/types/custom-d-t';
 import React from 'react';
 

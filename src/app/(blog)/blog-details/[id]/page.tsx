@@ -1,5 +1,5 @@
 import { blog_data } from '@/data/blog-data';
-import BlogDetailsMain from '@/pages/blog/blog-details';
+import BlogDetailsMain from '@/components/blog/blog-details-main';
 import { PageParamsProps } from '@/types/custom-d-t';
 import React from 'react';
 
