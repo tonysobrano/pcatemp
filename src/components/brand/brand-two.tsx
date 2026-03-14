@@ -12,7 +12,7 @@ import b_7 from "@/assets/brand/client-logo-8.png";
 import b_8 from "@/assets/brand/client-logo-9.png";
 
 // brand_data
-const brand_data = [
+export const brandData = [
   {
     id: 1,
     brand: b_1,
@@ -131,17 +131,17 @@ const brand_data = [
 export function BrandItems() {
   return (
     <>
-      {brand_data.map((item) => (
+      {brandData.map((item) => (
         <div key={item.id} className="col-xl-3 col-lg-3 col-md-6">
           <div className="tp-brand-4-item p-relative">
             <Image
               src={item.brand}
               alt="brand"
-              width={210}
-              height={72}
+              width={item.width}
+              height={item.height}
               style={{
-                width: 210,
-                height: 72,
+                width: item.width,
+                height: item.height,
                 objectFit: "contain",
               }}
             />

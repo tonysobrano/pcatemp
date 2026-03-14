@@ -1,294 +1,37 @@
+import {
+  blogClassicHeroPosts,
+  blogClassicPosts,
+  blogListPosts,
+  blogModernPosts,
+  homeBlogPosts,
+  orderedBlogPosts,
+  formatBlogDate,
+  type BlogPost,
+} from "@/content/blog";
 import { IBlogDT } from "@/types/blog-d-t";
 
-// blog images
+function toLegacyBlogPreview(post: BlogPost): IBlogDT {
+  return {
+    id: post.id,
+    slug: post.slug,
+    img: post.coverImage,
+    title: post.title,
+    date: formatBlogDate(post.publishedAt).toUpperCase(),
+    category: post.category,
+    author: post.author.name,
+    avatar: post.author.avatar,
+    desc: post.excerpt,
+  };
+}
 
-// home 5
-import blog_1 from "@/assets/img/home-05/blog/blog-1.jpg";
-import blog_2 from "@/assets/img/home-05/blog/blog-2.jpg";
-import blog_3 from "@/assets/img/home-05/blog/blog-3.jpg";
-import blog_4 from "@/assets/img/home-05/blog/blog-4.jpg";
-// blog modern 
-import b_m_1 from "@/assets/img/inner-blog/blog-standard/blog-1.jpg";
-import b_m_2 from "@/assets/img/inner-blog/blog-standard/blog-2.jpg";
-import b_m_3 from "@/assets/img/inner-blog/blog-standard/blog-3.jpg";
-import b_m_4 from "@/assets/img/inner-blog/blog-standard/blog-4.jpg";
-import b_m_5 from "@/assets/img/inner-blog/blog-standard/blog-5.jpg";
-import b_m_6 from "@/assets/img/inner-blog/blog-standard/blog-6.jpg";
-import b_m_7 from "@/assets/img/inner-blog/blog-standard/blog-7.jpg";
-
-// avatar
-import avatar from "@/assets/img/inner-blog/blog-sidebar/avatar/avata-1.jpg";
-
-// blog postbox img
-import blog_post_1 from '@/assets/img/inner-blog/blog-sidebar/sidebar-left-1.jpg';
-import blog_post_2 from '@/assets/img/inner-blog/blog-sidebar/sidebar-left-2.jpg';
-import blog_post_3 from '@/assets/img/inner-blog/blog-sidebar/sidebar-left-3.jpg';
-import blog_post_4 from '@/assets/img/inner-blog/blog-sidebar/sidebar-left-4.jpg';
-
-// blog list images
-import blog_list_1 from '@/assets/img/inner-blog/blog-right-sidebar/blog-1.jpg';
-import blog_list_2 from '@/assets/img/inner-blog/blog-right-sidebar/blog-2.jpg';
-import blog_list_3 from '@/assets/img/inner-blog/blog-right-sidebar/blog-3.jpg';
-import blog_list_4 from '@/assets/img/inner-blog/blog-right-sidebar/blog-4.jpg';
-import blog_list_5 from '@/assets/img/inner-blog/blog-right-sidebar/blog-5.jpg';
-
-
-
-export const blog_home_five: IBlogDT[] = [
-  {
-    id: 1,
-    img: blog_1,
-    title: "Future Business Ideas.",
-    date: '01. FEB. 2023',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 2,
-    img: blog_2,
-    title: "Start Unique Experience.",
-    date: '09. MAY. 2023',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 3,
-    img: blog_3,
-    title: "Is It Time To Rebrand?",
-    date: '30. AUG. 2023',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 4,
-    img: blog_4,
-    title: "Setting up the creativity.",
-    date: '11. JAN. 2023',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  }
-];
-
-
-export const blog_modern: IBlogDT[] = [
-  {
-    id: 5,
-    img: b_m_1,
-    title: 'Our New Projects With <br> Local Community',
-    date: '21. OCT. 2023',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 6,
-    img: b_m_2,
-    title: 'Future Business Ideas.',
-    date: '01. FEB. 2022',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 7,
-    img: b_m_3,
-    title: 'Start Unique Experience.',
-    date: '09. MAY. 2022',
-    category: 'Branding / Creative',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 8,
-    img: b_m_4,
-    title: 'Is It Time To Rebrand?',
-    date: '30. AUG. 2022',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 9,
-    img: b_m_5,
-    title: 'Setting up the creativity.',
-    date: '11. JAN. 2022',
-    category: 'Branding / Creative',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 10,
-    img: b_m_6,
-    title: 'Design to remember',
-    date: '15. OCT. 2023',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 11,
-    img: b_m_7,
-    title: 'Endless Road Stories',
-    date: '20. NOV. 2023',
-    category: 'Branding / Strategy',
-    author: 'Prime Creative Team',
-  },
-
-  {
-    id: 12,
-    img: b_m_2,
-    title: 'Future Business Ideas.',
-    date: '01. FEB. 2022',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 13,
-    img: b_m_5,
-    title: 'Start Unique Experience.',
-    date: '09. MAY. 2022',
-    category: 'Branding / Creative',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 14,
-    img: b_m_4,
-    title: 'Is It Time To Rebrand?',
-    date: '30. AUG. 2022',
-    category: 'Marketing / Strategy',
-    author: 'Prime Creative Team',
-  },
-];
-
-
+export const blog_home_five: IBlogDT[] = homeBlogPosts.map(toLegacyBlogPreview);
+export const blog_modern: IBlogDT[] = blogModernPosts.map(toLegacyBlogPreview);
 export const blog_classic: IBlogDT[] = [
-  {
-    id: 15,
-    title: "Relax while learning design and Be Connected",
-    date: '27 JULY, 2022',
-    category: 'BRANDING',
-    author: 'Prime Creative Team',
-    avatar: avatar,
+  ...blogClassicHeroPosts.map((post) => ({
+    ...toLegacyBlogPreview(post),
     blogHeroSlider: true,
-  },
-  {
-    id: 16,
-    title: "Relax while learning design and Be Connected",
-    date: '15 JUN, 2023',
-    category: 'DESIGN',
-    author: 'Prime Creative Team',
-    avatar: avatar,
-    blogHeroSlider: true,
-  },
-  {
-    id: 17,
-    img: blog_post_1,
-    title: "Design To Remember",
-    desc: 'Why clear visual systems make brands easier to recognize, trust, and remember across every touchpoint.',
-    date: '01 DEC, 2022',
-    category: 'WORK',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 18,
-    img: blog_post_2,
-    title: "Desert Treasure Hunt",
-    desc: 'Lessons from planning ambitious creative projects where logistics, timing, and storytelling all need to align.',
-    date: '12 OCT, 2023',
-    category: 'WORK',
-    author: 'Prime Creative Team',
-    video: true,
-    videoId: 'rVHxkxJM3rY'
-  },
-  {
-    id: 19,
-    blogQuoteTwo: true,
-    title: "MERGE DIFFERENT TO CREATE A PERFECT <br/> PLAYLIST FOR EACH.",
-    desc: 'Creative direction works best when different ideas are shaped into one clear, usable message.',
-    date: '01 DEC, 2022',
-    category: 'WORK',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 20,
-    imgSlider: true,
-    images: [blog_post_1, blog_post_2, blog_post_3],
-    title: "Future Business Ideas.",
-    desc: 'A practical look at where growing businesses can gain leverage through better systems, content, and positioning.',
-    date: '08 NOV, 2023',
-    category: 'WORK',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 21,
-    blogQuote: true,
-    title: "NOTES FROM THE CREATIVE DIRECTOR",
-    desc: 'Short reflections on leadership, creative standards, and building work that lasts beyond a single launch.',
-    date: '12 OCT, 2023',
-    category: 'WORK',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 22,
-    img: blog_post_4,
-    title: "Simplistic photo setup",
-    desc: 'How cleaner production setups can improve speed, consistency, and final output without unnecessary complexity.',
-    date: '18 DEC, 2023',
-    category: 'WORK',
-    author: 'Prime Creative Team',
-  },
+  })),
+  ...blogClassicPosts.map(toLegacyBlogPreview),
 ];
-
-
-export const blog_lists: IBlogDT[] = [
-  {
-    id: 23,
-    img: blog_list_1,
-    title: "Design To Remember",
-    date: '01 DEC, 2023',
-    category: 'Marketing',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 24,
-    img: blog_list_2,
-    title: "Simplistic photo setup",
-    date: '09. MAY. 2023',
-    category: 'Branding',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 25,
-    img: blog_list_3,
-    title: "Future Business Ideas.",
-    date: '20. NOV. 2023',
-    category: 'Branding',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 26,
-    img: blog_list_4,
-    title: "Is It Time To Rebrand?",
-    date: '30. AUG. 2023',
-    category: 'Branding',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 27,
-    img: blog_list_5,
-    title: "Desert Treasure Hunt",
-    date: '09. MAY. 2023',
-    category: 'Branding',
-    author: 'Prime Creative Team',
-  },
-  {
-    id: 28,
-    img: blog_list_2,
-    title: "Visualizing Your Brand",
-    date: '12. JAN. 2023',
-    category: 'Branding',
-    author: 'Prime Creative Team',
-  },
-];
-
-export const blog_data: IBlogDT[] = [
-  ...blog_lists,
-  ...blog_home_five,
-  ...blog_modern,
-  ...blog_classic,
-]
-
+export const blog_lists: IBlogDT[] = blogListPosts.map(toLegacyBlogPreview);
+export const blog_data: IBlogDT[] = orderedBlogPosts.map(toLegacyBlogPreview);

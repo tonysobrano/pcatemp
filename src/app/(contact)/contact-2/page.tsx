@@ -1,9 +1,11 @@
 import React from "react";
 import { Metadata } from "next";
 import ContactTwoMain from "@/page-views/contact/contact-2";
+import { siteSettings } from "@/content/site-settings";
 
 export const metadata: Metadata = {
-  title: "Prime Creative - Contact 2 Page",
+  title: siteSettings.metadata.contactAlt.title,
+  description: siteSettings.metadata.contactAlt.description,
 };
 
 const ContactTwoPage = () => {

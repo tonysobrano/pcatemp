@@ -1,36 +1,21 @@
 import React from "react";
 import { Facebook, Instagram, Linkdin, Twitter } from "../svg";
 import Link from "next/link";
+import { siteSettings } from "@/content/site-settings";
 
-const social_data = [
-  {
-    id: 1,
-    icon: <Linkdin />,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: 2,
-    icon: <Twitter />,
-    link: "https://twitter.com/",
-  },
-  {
-    id: 3,
-    icon: <Instagram />,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: 4,
-    icon: <Facebook />,
-    link: "https://www.facebook.com/",
-  },
-];
+const iconMap = {
+  linkedin: <Linkdin />,
+  facebook: <Facebook />,
+  instagram: <Instagram />,
+  tiktok: <Twitter />,
+} as const;
 
 export default function Social() {
   return (
     <>
-      {social_data.map((item) => (
-        <Link href={item.link} key={item.id} target="_blank">
-          <span>{item.icon}</span>
+      {siteSettings.footerSocialLinks.map((item) => (
+        <Link href={item.href} key={item.label} target="_blank">
+          <span>{iconMap[item.label as keyof typeof iconMap] ?? <Facebook />}</span>
         </Link>
       ))}
     </>

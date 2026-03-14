@@ -9,6 +9,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import "swiper/css/bundle";
 import "./globals.scss";
+import { siteSettings } from "@/content/site-settings";
 
 const gellery = localFont({
   src: [
@@ -63,8 +64,8 @@ const marcellus = Marcellus({
 });
 
 export const metadata: Metadata = {
-  title: "Prime Creative | Jigjiga's First Full-Service Creative Agency",
-  description: "Jigjiga's first full-service creative agency for strategy, production, branding, marketing, and digital systems.",
+  title: siteSettings.metadata.default.title,
+  description: siteSettings.metadata.default.description,
 };
 
 export default function RootLayout({

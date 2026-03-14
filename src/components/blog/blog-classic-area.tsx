@@ -49,7 +49,7 @@ export default function BlogClassicArea() {
                 <article key={item.id} className="postbox__item mb-80">
                   {!item.blogQuote && !item.blogQuoteTwo && !item.imgSlider && (
                     <div className="postbox__thumb">
-                      <Link href={`/blog-details/${item.id}`}>
+                      <Link href={`/blog/${item.slug}`}>
                         <Image src={item.img!} alt="blog-img" />
                       </Link>
                       {item.video && (
@@ -95,13 +95,13 @@ export default function BlogClassicArea() {
                         </span>
                       </div>
                       <h3 className="postbox__title">
-                        <Link href={`/blog-details/${item.id}`}>{item.title}</Link>
+                        <Link href={`/blog/${item.slug}`}>{item.title}</Link>
                       </h3>
                       <div className="postbox__text">
                         <p>{item.desc}</p>
                       </div>
                       <div className="postbox__read-more">
-                        <Link href={`/blog-details/${item.id}`}
+                        <Link href={`/blog/${item.slug}`}
                           className="tp-btn-border-lg"
                         >
                           read more

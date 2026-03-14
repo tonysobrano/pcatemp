@@ -5,6 +5,7 @@ import logo from "@/assets/img/logo/logo-white.png";
 import logo_2 from "@/assets/img/logo/logo.png";
 import { RightArrow } from "@/components/svg";
 import { serviceItems } from "@/data/service-data";
+import { siteSettings } from "@/content/site-settings";
 
 function formatFooterServiceTitle(title: string) {
   return title
@@ -36,9 +37,8 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
           whiteFooter ? "tp-footer-white" : "black-bg"
         }`}
       >
-        <div className="container">
-          <div className="ab-sticky-header-align">
-            <div className="row">
+        <div className="container container-1480">
+          <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-6 mb-50">
               <div className="tp-footer-2-widget footer-col-2-1">
                 {!whiteFooter && (
@@ -60,7 +60,8 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 )}
                 <div className="tp-footer-2-widget-text">
                   <p>
-                    Jigjiga&apos;s Leading Creative & <br /> Digital Agency
+                    {siteSettings.footerTagline.split(" & ")[0]} & <br />{" "}
+                    {siteSettings.footerTagline.split(" & ")[1]}
                   </p>
                 </div>
               </div>
@@ -99,19 +100,18 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
               <div className="tp-footer-2-widget footer-col-2-4">
                 <div className="tp-footer-2-widget-newslatter">
                   <h4 className="tp-footer-2-widget-title">
-                    Subscribe to our newsletter we might send you something cool
+                    {siteSettings.newsletterHeading}
                   </h4>
                   <form action="#">
                     <div className="tp-footer-2-input p-relative">
                       <input type="text" placeholder="Enter your email..." />
                       <button>
-                        <RightArrow clr={whiteFooter?"currentcolor":'#F3F3F4'}/>
+                        <RightArrow clr={whiteFooter ? "currentcolor" : "#F3F3F4"} />
                       </button>
                     </div>
                   </form>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -122,23 +122,23 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
           whiteFooter ? "tp-copyright-white" : "black-bg"
         }`}
       >
-        <div className="container">
-          <div className="ab-sticky-header-align">
-            <div className="row align-items-center">
+        <div className="container container-1480">
+          <div className="row align-items-center">
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
                 <p>
-                  {new Date().getFullYear()} © Prime Creative — All rights reserved
+                  {new Date().getFullYear()} © {siteSettings.name} — All rights reserved
                 </p>
               </div>
             </div>
             <div className="col-xl-8 col-lg-7">
               <div className="tp-copyright-2-social text-center text-lg-end">
-                <Link className="mb-10" href="#">instagram</Link>
-                <Link className="mb-10" href="#">tiktok</Link>
-                <Link className="mb-10" href="#">facebook</Link>
+                {siteSettings.footerSocialLinks.slice(0, 3).map((link) => (
+                  <Link className="mb-10" href={link.href} key={link.label} target="_blank">
+                    {link.label}
+                  </Link>
+                ))}
               </div>
-            </div>
             </div>
           </div>
         </div>

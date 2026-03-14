@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import WorkMain from "@/page-views/work/work-main";
+import { siteSettings } from "@/content/site-settings";
 
 export const metadata: Metadata = {
-  title: "Work | Prime Creative",
-  description:
-    "Selected work across production, digital platforms, brand systems, marketing, and event management.",
+  title: siteSettings.metadata.work.title,
+  description: siteSettings.metadata.work.description,
 };
 
 export default function WorkPage() {

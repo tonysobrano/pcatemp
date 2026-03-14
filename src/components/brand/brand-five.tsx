@@ -1,28 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { brandData } from "./brand-two";
 
-// images
-import b_1 from "@/assets/brand/client-logo-1.png";
-import b_2 from "@/assets/brand/client-logo-2.png";
-import b_3 from "@/assets/brand/client-logo-3.png";
-import b_4 from "@/assets/brand/client-logo-4.png";
-import b_5 from "@/assets/brand/client-logo-5.png";
-import b_6 from "@/assets/brand/client-logo-7.png";
-import b_7 from "@/assets/brand/client-logo-8.png";
-import b_8 from "@/assets/brand/client-logo-9.png";
-
-// brand images
-const brand_images = [
-  { src: b_1, width: 131, height: 34 },
-  { src: b_2, width: 110, height: 22 },
-  { src: b_3, width: 99, height: 44 },
-  { src: b_4, width: 93, height: 34 },
-  { src: b_5, width: 92, height: 50 },
-  { src: b_6, width: 110, height: 22 },
-  { src: b_7, width: 109, height: 34 },
-  { src: b_8, width: 70, height: 38 },
-];
+const brandImages = [...brandData, ...brandData];
 
 export default function BrandFive() {
   return (
@@ -46,17 +27,19 @@ export default function BrandFive() {
             <div className="ab-brand-wrapper mb-80">
               <div className="swiper-container ab-brand-slide-active">
                 <Marquee speed={100} loop={0} className="ab-brand-slide-wrap">
-                  {brand_images.map((b, i) => (
-                    <div
-                      key={i}
-                      className="ab-brand-item"
-                    >
+                  {brandImages.map((brand, i) => (
+                    <div key={i} className="ab-brand-item">
                       <Image
-                        src={b.src}
-                        alt="brand"
-                        width={b.width}
-                        height={b.height}
-                        style={{ width: b.width, height: b.height, objectFit: "cover" }}
+                        src={brand.brand}
+                        alt={`${brand.texts[0]} logo`}
+                        width={brand.width}
+                        height={brand.height}
+                        style={{
+                          width: brand.width,
+                          height: brand.height,
+                          objectFit: "contain",
+                          filter: "brightness(0) invert(1)",
+                        }}
                       />
                     </div>
                   ))}

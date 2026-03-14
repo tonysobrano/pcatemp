@@ -80,7 +80,7 @@ export default function BlogClassicSlider() {
                           <h4 className="blog-sidebar-slider-title tp-char-animation">
                             {item.title}
                           </h4>
-                          <Link href={`/blog-details/${item.id}`}
+                          <Link href={`/blog/${item.slug}`}
                             className="blog-sidebar-slider-link"
                           >
                             Read More

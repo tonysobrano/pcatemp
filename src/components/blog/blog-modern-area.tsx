@@ -21,16 +21,12 @@ export default function BlogModern() {
               <div className="tp-blog-standard-thumb-box p-relative">
                 <Image data-speed=".8" src={first_blog.img!} alt="blog-img" />
                 <div className="tp-blog-standard-title-box d-none d-sm-block">
-                  <h4
-                    className="tp-blog-standard-title tp-char-animation"
-                    dangerouslySetInnerHTML={{ __html: first_blog.title }}
-                  ></h4>
+                  <h4 className="tp-blog-standard-title tp-char-animation">
+                    {first_blog.title}
+                  </h4>
                 </div>
                 <div className="tp-blog-standard-meta d-none d-sm-block">
-                  <span>
-                    {first_blog.date.split(".")[1]} <br />{" "}
-                    {first_blog.date.split(".")[0]}
-                  </span>
+                  <span>{first_blog.date}</span>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { UpArrow } from "@/components/svg";
 import Link from "next/link";
+import { siteSettings } from "@/content/site-settings";
 
 export default function FooterFive() {
   return (
@@ -19,8 +20,8 @@ export default function FooterFive() {
                   </h4>
                 </div>
                 <div className="tp-footer-5-info d-flex align-items-center justify-content-start justify-content-md-end">
-                  <Link className="tp-footer-5-mail" href="mailto:info@primecreative.agency">
-                    info@primecreative.agency
+                  <Link className="tp-footer-5-mail" href={`mailto:${siteSettings.email}`}>
+                    {siteSettings.email}
                   </Link>
                   <Link className="tp-footer-5-link" href="/contact">
                     <UpArrow clr="#19191A" />
@@ -42,16 +43,18 @@ export default function FooterFive() {
             </div>
             <div className="col-xl-6 col-lg-6 col-md-7">
               <div className="tp-copyright-2-social text-start text-sm-center text-xl-center">
-                <Link className="mb-10" href="#">
-                  Linkedin
-                </Link>
-                <Link className="mb-10" href="#">
-                  Twitter
-                </Link>
-                <Link className="mb-10" href="#">
-                  Instagram
-                </Link>
-                <p className="mt-20 mb-0">©{new Date().getFullYear()} Prime Creative. All rights reserved.</p>
+                {siteSettings.footerSocialLinks
+                  .filter((link) =>
+                    ["linkedin", "instagram", "facebook"].includes(link.label)
+                  )
+                  .map((link) => (
+                    <Link className="mb-10" href={link.href} key={link.label} target="_blank">
+                      {link.label.charAt(0).toUpperCase() + link.label.slice(1)}
+                    </Link>
+                  ))}
+                <p className="mt-20 mb-0">
+                  ©{new Date().getFullYear()} {siteSettings.name}. All rights reserved.
+                </p>
               </div>
             </div>
           </div>

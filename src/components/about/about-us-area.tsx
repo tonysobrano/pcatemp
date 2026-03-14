@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Hand } from "../svg";
+import { aboutPageContent } from "@/content/about";
 
 // images
 import shape from "@/assets/img/inner-about/about/shape-1.png";
@@ -10,6 +11,8 @@ import ab_2 from "@/assets/img/inner-about/about/about-3.jpg";
 import ab_3 from "@/assets/img/inner-about/about/about-2.jpg";
 
 export default function AboutUsArea() {
+  const { services, story } = aboutPageContent;
+
   return (
     <div className="ab-about-area ab-about-mt pb-90 z-index-5">
       <div className="container container-1480">
@@ -44,66 +47,64 @@ export default function AboutUsArea() {
             </div>
           </div>
         </div>
-        <div className="ab-sticky-header-align">
-          <div id="about-info" className="row">
-            <div className="col-xxl-10">
-              <div id="our-story" className="ab-about-content p-relative">
-                <span>
-                  <Hand />
-                  Hi!
-                </span>
-                <p className="tp-dropcap tp_fade_bottom">
-                  We are a team of creatives, strategists, and builders who are deeply rooted in our city and culture. We understand the market because we live in it. We know what resonates here because this is home.
-                </p>
-              </div>
+        <div id="about-info" className="row">
+          <div className="col-xxl-9">
+            <div id="our-story" className="ab-about-content p-relative">
+              <span>
+                <Hand />
+                {story.greeting}
+              </span>
+              <p className="tp-dropcap tp_fade_bottom">
+                {story.lines[0]} {story.lines[1]}
+              </p>
             </div>
           </div>
-          <div className="row">
-            <div className="col-xl-9">
-              <div className="row">
-                <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
-                  <div className="ab-about-category-title-box ab-about-category-services-title-box p-relative">
-                    <h4 className="ab-about-category-title">
-                      Stuff <br />
-                      <span>we do</span>
-                    </h4>
-                    <Image
-                      className="ab-about-shape-1 ab-about-category-services-shape d-none d-md-block"
-                      src={shape}
-                      alt="shape"
-                    />
+        </div>
+        <div className="row">
+          <div className="col-xl-9">
+            <div className="row">
+              <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
+                <div className="ab-about-category-title-box ab-about-category-services-title-box p-relative">
+                  <h4 className="ab-about-category-title">
+                    {services.title} <br />
+                    <span>{services.accent}</span>
+                  </h4>
+                  <Image
+                    className="ab-about-shape-1 ab-about-category-services-shape d-none d-md-block"
+                    src={shape}
+                    alt="shape"
+                  />
+                </div>
+              </div>
+              <div className="col-xl-7 col-lg-7 col-md-8">
+                <div className="row">
+                  <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
+                    <div className="ab-about-category-list category-space-1 tp_fade_bottom">
+                      <ul>
+                        {services.columns[0].map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
+                    <div className="ab-about-category-list category-space-2 tp_fade_bottom">
+                      <ul>
+                        {services.columns[1].map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div className="col-xl-7 col-lg-7 col-md-8">
-                  <div className="row">
-                    <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
-                      <div className="ab-about-category-list category-space-1 tp_fade_bottom">
-                        <ul>
-                          <li>Branding &amp; Identity</li>
-                          <li>Graphic Design</li>
-                          <li>Video Production</li>
-                          <li>Web Design &amp; Development</li>
-                          <li>Business Systems</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
-                      <div className="ab-about-category-list category-space-2 tp_fade_bottom">
-                        <ul>
-                          <li>Photography</li>
-                          <li>Social Media Management</li>
-                          <li>Digital Marketing</li>
-                          <li>Event Production</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-12">
-                      <Link className="tp-btn-white-sm border-style" href="/service">
-                        View All Services
-                      </Link>
-                    </div>
+                <div className="row">
+                  <div className="col-12">
+                    <Link
+                      className="tp-btn-white-sm border-style"
+                      href={services.ctaHref}
+                    >
+                      {services.ctaLabel}
+                    </Link>
                   </div>
                 </div>
               </div>

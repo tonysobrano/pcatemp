@@ -1,9 +1,30 @@
 import React from "react";
-import { blog_home_five } from "@/data/blog-data";
+import {
+  getRelatedBlogPosts,
+  formatBlogDate,
+  orderedBlogPosts,
+  type BlogPost,
+} from "@/content/blog";
 import BlogItemTwo from "../blog-item/blog-item-2";
 
-export default function BlogDetailsRelatedPosts() {
-  const blog_items = [...blog_home_five].slice(0, 3);
+type BlogDetailsRelatedPostsProps = {
+  post?: BlogPost;
+};
+
+export default function BlogDetailsRelatedPosts({
+  post,
+}: BlogDetailsRelatedPostsProps) {
+  const resolvedPost = post ?? orderedBlogPosts[0];
+  const blogItems = getRelatedBlogPosts(resolvedPost).map((item) => ({
+    id: item.id,
+    slug: item.slug,
+    img: item.coverImage,
+    title: item.title,
+    date: formatBlogDate(item.publishedAt).toUpperCase(),
+    category: item.category,
+    author: item.author.name,
+  }));
+
   return (
     <div className="blog-details-realated-area grey-bg-2 pt-90 pb-40">
       <div className="container">
@@ -15,7 +36,7 @@ export default function BlogDetailsRelatedPosts() {
           </div>
         </div>
         <div className="row">
-          {blog_items.map((item) => (
+          {blogItems.map((item) => (
             <div key={item.id} className="col-xl-4 col-lg-6 col-md-6 mb-50">
               <BlogItemTwo item={item} />
             </div>

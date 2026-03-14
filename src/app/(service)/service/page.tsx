@@ -1,11 +1,11 @@
 import React from "react";
 import { Metadata } from "next";
 import ServiceMain from "@/page-views/service/service";
+import { siteSettings } from "@/content/site-settings";
 
 export const metadata: Metadata = {
-  title: "Services | Prime Creative",
-  description:
-    "Explore Prime Creative services across production, digital platforms, branding, marketing, and event management.",
+  title: siteSettings.metadata.services.title,
+  description: siteSettings.metadata.services.description,
 };
 
 const ServicePage = () => {

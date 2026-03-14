@@ -1,24 +1,17 @@
-import { blog_data } from '@/data/blog-data';
-import BlogDetailsMain from '@/components/blog/blog-details-main';
-import { PageParamsProps } from '@/types/custom-d-t';
-import React from 'react';
+import { notFound, permanentRedirect } from "next/navigation";
+import { getBlogPostById } from "@/content/blog";
 
-export async function generateMetadata(props: PageParamsProps) {
-    const resolvedParams = await props.params;
-    const { id } = resolvedParams;
-    const blog = blog_data.find((blog) => blog.id == Number(id));
-    return {
-        title: blog?.title ? blog.title : "Blog Details",
-    };
+type BlogLegacyPageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function BlogLegacyPage(props: BlogLegacyPageProps) {
+  const { id } = await props.params;
+  const post = getBlogPostById(Number(id));
+
+  if (!post) {
+    notFound();
+  }
+
+  permanentRedirect(`/blog/${post.slug}`);
 }
-
-export default async function BlogDetailsPage(props: PageParamsProps) {
-    const resolvedParams = await props.params;
-    const { id } = resolvedParams;
-
-    return (
-        <BlogDetailsMain id={id} />
-    );
-}
-
-

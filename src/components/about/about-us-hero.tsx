@@ -2,8 +2,11 @@ import React from "react";
 import { scroller } from "react-scroll";
 import { ScrollDown } from "../svg";
 import Link from "next/link";
+import { aboutPageContent } from "@/content/about";
 
 export default function AboutUsHero() {
+  const { hero } = aboutPageContent;
+
   const scrollTo = () => {
     scroller.scrollTo('about-info', {
       duration: 800,
@@ -37,12 +40,12 @@ export default function AboutUsHero() {
                 data-stagger="0.08"
               >
                 <span className="ab-inner-hero-subtitle">
-                  Digital <br /> creative agency
+                  {hero.subtitleLines[0]} <br /> {hero.subtitleLines[1]}
                 </span>
                 <h1 className="ab-inner-hero-title tp-char-animation">
-                  Building your Presence
+                  {hero.title}
                 </h1>
-                <p>Jigjiga&apos;s First Full-Service Creative Agency</p>
+                <p>{hero.tagline}</p>
               </div>
             </div>
           </div>
@@ -53,11 +56,12 @@ export default function AboutUsHero() {
                 data-lag="0.2"
                 data-stagger="0.08"
               >
-                <p>
-                  We don&apos;t just make things look <br /> good, We make businesses work better.
-                </p>
-                <Link className="tp-btn-white-sm border-style mt-30" href="#our-story">
-                  Our Story
+                <p>{hero.intro}</p>
+                <Link
+                  className="tp-btn-white-sm border-style mt-30"
+                  href={hero.ctaHref}
+                >
+                  {hero.ctaLabel}
                 </Link>
               </div>
             </div>

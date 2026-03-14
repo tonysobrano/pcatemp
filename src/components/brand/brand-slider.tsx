@@ -48,7 +48,7 @@ export default function BrandSlider() {
               alt=""
               width={b.width}
               height={b.height}
-              style={{ width: b.width, height: b.height, objectFit: "cover" }}
+              style={{ width: b.width, height: b.height, objectFit: "contain" }}
             />
           </div>
         ))}

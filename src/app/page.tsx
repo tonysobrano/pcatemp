@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import HomeOnePage from "./(homes)/home-1/page";
+import { siteSettings } from "@/content/site-settings";
 
 export const metadata: Metadata = {
-  title: "Prime Creative - Jigjiga's First Full-Service Creative Agency",
-  description: "Integrated Creative, Development, and Communications Agency.",
+  title: siteSettings.metadata.home.title,
+  description: siteSettings.metadata.home.description,
 };
 
 export default function Home() {

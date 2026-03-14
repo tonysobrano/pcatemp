@@ -6,18 +6,20 @@ import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
-// internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
 import FooterTwo from "@/layouts/footers/footer-two";
 import BlogDetailsArea from "@/components/blog/details/blog-details-area";
 import BlogDetailsBreadcrumb from "@/components/blog/details/blog-details-breadcrumb";
 import BlogDetailsRelatedPosts from "@/components/blog/details/blog-details-related-posts";
-// animation
 import { charAnimation } from "@/utils/title-animation";
-import { IdProps } from "@/types/custom-d-t";
+import type { BlogPost } from "@/content/blog";
 
-const BlogDetailsMain = ({ id }: IdProps) => {
+type BlogDetailsMainProps = {
+  post: BlogPost;
+};
+
+const BlogDetailsMain = ({ post }: BlogDetailsMainProps) => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -29,29 +31,17 @@ const BlogDetailsMain = ({ id }: IdProps) => {
 
   return (
     <Wrapper>
-      {/* header area start */}
       <HeaderEleven transparent={true} />
-      {/* header area end */}
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* blog details hero */}
-            <BlogDetailsBreadcrumb id={id} />
-            {/* blog details hero */}
-
-            {/* blog details area */}
-            <BlogDetailsArea />
-            {/* blog details area */}
-
-            {/* related posts */}
-            <BlogDetailsRelatedPosts />
-            {/* related posts */}
+            <BlogDetailsBreadcrumb post={post} />
+            <BlogDetailsArea post={post} />
+            <BlogDetailsRelatedPosts post={post} />
           </main>
 
-          {/* footer area */}
           <FooterTwo topCls="" />
-          {/* footer area */}
         </div>
       </div>
     </Wrapper>

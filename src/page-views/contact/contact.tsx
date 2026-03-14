@@ -14,6 +14,7 @@ import ContactLocation from "@/components/contact/contact-location";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation } from "@/utils/title-animation";
+import { contactPageContent } from "@/content/contact";
 
 const ContactMain = () => {
   useScrollSmooth();
@@ -47,9 +48,9 @@ const ContactMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Prime Creative</span>
+                        <span className="tm-hero-subtitle">{contactPageContent.heroEyebrow}</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
-                          Get in touch
+                          {contactPageContent.heroTitleLines.join(" ")}
                         </h4>
                       </div>
                     </div>

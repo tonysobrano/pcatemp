@@ -1,36 +1,40 @@
 import React from "react";
 import Image from "next/image";
-import avatar from '@/assets/img/inner-blog/blog-details/avatar/avatar-1.jpg'
 import Link from "next/link";
+import { orderedBlogPosts, type BlogAuthor } from "@/content/blog";
+import { siteSettings } from "@/content/site-settings";
 
-export default function BlogDetailsAuthor() {
+type BlogDetailsAuthorProps = {
+  author?: BlogAuthor;
+};
+
+export default function BlogDetailsAuthor({ author }: BlogDetailsAuthorProps) {
+  const authorDetails = author ?? orderedBlogPosts[0].author;
+
   return (
     <div className="blog-details-author d-flex mb-60">
       <div className="blog-details-author-img">
         <Image
           style={{ width: "100%", height: "auto" }}
-          src={avatar}
-          alt=""
+          src={authorDetails.avatar}
+          alt={authorDetails.name}
         />
       </div>
       <div className="blog-details-author-content-wrap">
         <div className="blog-details-author-social text-end">
-          <Link href="#">
-            <i className="fab fa-facebook-f"></i>
-          </Link>
-          <Link href="#">
-            <i className="fab fa-twitter"></i>
-          </Link>
-          <Link href="#">
-            <i className="fab fa-linkedin-in"></i>
-          </Link>
+          {siteSettings.footerSocialLinks
+            .filter((link) =>
+              ["facebook", "linkedin", "instagram"].includes(link.label)
+            )
+            .map((link) => (
+              <Link href={link.href} key={link.label} target="_blank">
+                <i className={`fab fa-${link.label === "linkedin" ? "linkedin-in" : link.label}`}></i>
+              </Link>
+            ))}
         </div>
         <div className="blog-details-author-content">
-          <h4 className="blog-details-author-title">Prime Creative Team</h4>
-          <p>
-            Practical ideas on branding, communication, production, and digital
-            growth from the Prime Creative team.
-          </p>
+          <h4 className="blog-details-author-title">{authorDetails.name}</h4>
+          <p>{authorDetails.bio}</p>
         </div>
       </div>
     </div>

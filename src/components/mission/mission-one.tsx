@@ -2,11 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { UpArrow } from "../svg";
+import { homePageContent } from "@/content/home";
 // images
 import m_img_1 from "@/assets/img/home-05/mission/mission-1.jpg";
 import m_img_2 from "@/assets/img/home-05/mission/mission-2.jpg";
 
 export default function MissionOne() {
+  const { mission } = homePageContent;
+
   return (
     <div className="tp-mission-area pt-120 pb-120 mb-110 black-bg p-relative">
       <div className="container">
@@ -15,11 +18,11 @@ export default function MissionOne() {
             <div className="tp-mission-title-box text-center">
               <div className="tp-mission-title-inner">
                 <span className="tp-mission-subtitle tp_fade_left">
-                  What we do
+                  {mission.eyebrow}
                 </span>
                 <h4 className="tp-about-5-title tp_fade_bottom">
-                  We Help Businesses <br /> and Organizations Communicate Better{" "}
-                  <br /> Operate Smarter <br /> and Stand Out.
+                  {mission.titleLines[0]} <br /> {mission.titleLines[1]} <br />{" "}
+                  {mission.titleLines[2]}
                 </h4>
               </div>
             </div>
@@ -38,22 +41,16 @@ export default function MissionOne() {
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6">
             <div className="tp-mission-content">
-              <p className="tp_fade_bottom">
-                Founded in 2023, Prime Creative Agency was built on a simple
-                belief: businesses and organizations in Jigjiga deserve
-                world-class branding, production, marketing, and digital
-                systems that help them communicate clearly, operate smarter,
-                and grow with structure.
-              </p>
+              <p className="tp_fade_bottom">{mission.body}</p>
               <div className="tp-hover-btn-wrapper tp_fade_bottom">
                 <Link
                   className="tp-btn-circle-2 tp-hover-btn-item tp-hover-btn"
-                  href="/about-us"
+                  href={mission.ctaHref}
                 >
                   <span>
                     <UpArrow />
                     <br />
-                    About us
+                    {mission.ctaLabel}
                   </span>
                   <i className="tp-btn-circle-dot"></i>
                 </Link>

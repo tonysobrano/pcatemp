@@ -3,8 +3,11 @@ import Image from "next/image";
 import ContactForm from "../form/contact-form";
 import Social from "../social/social";
 import shape from "@/assets/img/inner-about/about/shape-1.png";
+import { contactPageContent } from "@/content/contact";
 
 export default function ContactTwo() {
+  const { formHeading } = contactPageContent;
+
   return (
     <div className="cn-contactform-area cn-contactform-style p-relative pb-100">
       <div className="ab-2-hero-social-wrap d-none d-xl-block">
@@ -20,8 +23,8 @@ export default function ContactTwo() {
           <div className="col-xl-5">
             <div className="ab-about-category-title-box mb-40 p-relative">
               <h4 className="ab-about-category-title">
-                Send a Message <br />
-                <span>Contact Us</span>
+                {formHeading.title} <br />
+                <span>{formHeading.accent}</span>
               </h4>
               <Image
                 className="ab-about-shape-1 d-none d-xl-block"

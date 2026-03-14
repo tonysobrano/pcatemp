@@ -14,6 +14,7 @@ import FooterTwo from "@/layouts/footers/footer-two";
 import { charAnimation } from "@/utils/title-animation";
 import ContactForm from "@/components/form/contact-form";
 import ContactLocationTwo from "@/components/contact/contact-location-2";
+import { contactPageContent } from "@/content/contact";
 
 const ContactTwoMain = () => {
   useScrollSmooth();
@@ -47,9 +48,10 @@ const ContactTwoMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Prime Creative</span>
+                        <span className="tm-hero-subtitle">{contactPageContent.heroEyebrow}</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
-                          Get <br /> in touch
+                          {contactPageContent.heroTitleLines[0]} <br />{" "}
+                          {contactPageContent.heroTitleLines[1]}
                         </h4>
                       </div>
                     </div>
@@ -66,7 +68,7 @@ const ContactTwoMain = () => {
                       <div className="col-xl-6">
                         <div className="cn-contactform-2-map">
                           <iframe
-                            src="https://www.google.com/maps?q=Jigjiga,Ethiopia&output=embed"
+                            src={contactPageContent.mapEmbedUrl}
                             style={{border:0}}
                             allowFullScreen
                             loading="lazy"
@@ -77,7 +79,7 @@ const ContactTwoMain = () => {
                       <div className="col-xl-6">
                         <div className="cn-contactform-wrap">
                           <h4 className="cn-contactform-2-title">
-                            Send a Message
+                            {contactPageContent.secondaryFormTitle}
                           </h4>
                           <ContactForm btnCls="white-bg" />
                         </div>
@@ -95,9 +97,7 @@ const ContactTwoMain = () => {
                         <div className="col-xl-10">
                            <div className="cn-contactform-support-bg d-flex align-items-center justify-content-center" style={{backgroundImage: "url(/assets/img/inner-contact/contact/contact-bg.png)"}}>
                               <div className="cn-contactform-support-text text-center">
-                                 <span>Or, you can contact one of our studios
-                                    directly below. We aim to respond
-                                    within 24 hours.</span>
+                                 <span>{contactPageContent.supportText}</span>
                               </div>
                            </div>
                         </div>

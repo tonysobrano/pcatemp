@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import overlay from "@/assets/img/inner-blog/blog-details/bg-shape/overly.png";
-import avatar from "@/assets/img/inner-blog/blog-details/avatar/avatar-2.jpg";
-import { IdProps } from "@/types/custom-d-t";
-import { blog_data } from "@/data/blog-data";
+import { formatBlogDateLong, type BlogPost } from "@/content/blog";
 
-export default function BlogDetailsBreadcrumb({ id }: IdProps) {
-  // Find the blog that matches the given ID
-  const blog = blog_data.find((team) => team.id == id);
+type BlogDetailsBreadcrumbProps = {
+  post: BlogPost;
+};
 
+export default function BlogDetailsBreadcrumb({
+  post,
+}: BlogDetailsBreadcrumbProps) {
   return (
     <div className="blog-details-area">
       <div
         className="blog-details-bg blog-details-bg-height blog-details-overlay p-relative d-flex align-items-end pt-170 pb-170"
         style={{
-          backgroundImage: `url(/assets/img/inner-blog/blog-details/blog-details-1.jpg)`,
+          backgroundImage: `url(${post.coverImage.src})`,
         }}
       >
         <div className="blog-details-overlay-shape">
@@ -25,15 +26,15 @@ export default function BlogDetailsBreadcrumb({ id }: IdProps) {
             <div className="col-xl-11">
               <div className="blog-details-content z-index-5">
                 <span className="blog-details-meta">
-                  Creative <i>. 01 Oct, 2022</i>
+                  {post.category} <i>. {formatBlogDateLong(post.publishedAt)}</i>
                 </span>
                 <h4 className="blog-details-title tp-char-animation">
-                  {blog?.title}
+                  {post.title}
                 </h4>
                 <div className="blog-details-top-author d-flex align-items-center">
-                  <Image src={avatar} alt="avatar" />
+                  <Image src={post.author.avatar} alt={post.author.name} />
                   <span>
-                    Mike Granetz / <i>5 min</i>
+                    {post.author.name} / <i>{post.readTime}</i>
                   </span>
                 </div>
               </div>

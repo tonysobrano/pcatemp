@@ -23,7 +23,7 @@ export default function BlogListArea() {
                 <div className="col-xl-5 col-lg-5 col-md-7">
                   <div className="tp-blog-list-content-wrap">
                     <div className="tp-blog-list-thumb anim-zoomin-wrap">
-                      <Link href={`/blog-details/${item.id}`}>
+                      <Link href={`/blog/${item.slug}`}>
                         <Image
                           className="anim-zoomin"
                           src={item.img!}
@@ -38,11 +38,11 @@ export default function BlogListArea() {
                   <div className="tp-blog-list-content tp-flex-column">
                     <div className="tp-blog-list-title-wrap">
                       <h4 className="tp-blog-list-title-sm">
-                        <Link href={`/blog-details/${item.id}`}>{item.title}</Link>
+                        <Link href={`/blog/${item.slug}`}>{item.title}</Link>
                       </h4>
                     </div>
                     <div className="tp-blog-list-link-wrap">
-                      <Link className="tp-blog-list-link" href={`/blog-details/${item.id}`}>
+                      <Link className="tp-blog-list-link" href={`/blog/${item.slug}`}>
                         Read More
                       </Link>
                     </div>
