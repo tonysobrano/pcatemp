@@ -66,61 +66,63 @@ const AwardOne = ({cls="pt-125 pb-125",abStyle=false}: IProps) => {
   return (
     <div className={`tp-award-area ${cls}`}>
       <div className="container container-1630">
-        <div className="row">
-          <div className="col-xxl-6 col-xl-7">
-            {!abStyle && (
-              <div className="tp-award-title-box">
-                <h4 className="tp-section-title tp-char-animation">
-                  Awards <br /> <span>& Recognitions</span>
-                </h4>
-              </div>
-            )}
-            {abStyle && (
-              <div className="ab-award-title-sm">
-                <span>
-                  <Leaf />
-                  Our Awards
-                </span>
-              </div>
-            )}
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xl-4 col-lg-4 col-md-12">
-            <div className="tp-award-list-thumb-wrap p-relative">
-              <div
-                id="tp-award-thumb"
-                className={`tp-award-list-thumb-${activeThumb}`}
-              >
-                {award_data.map((item) => (
-                  <Image
-                    key={item.id}
-                    className={`tp-award-list-thumb-${item.id}`}
-                    src={item.img}
-                    alt="list-thumb"
-                  />
-                ))}
-              </div>
+        <div className={abStyle ? "container" : undefined}>
+          <div className="row">
+            <div className="col-xxl-6 col-xl-7">
+              {!abStyle && (
+                <div className="tp-award-title-box">
+                  <h4 className="tp-section-title tp-char-animation">
+                    Awards <br /> <span>& Recognitions</span>
+                  </h4>
+                </div>
+              )}
+              {abStyle && (
+                <div className="ab-award-title-sm ab-award-title-sm-logo">
+                  <span>
+                    <Leaf />
+                    Our Awards
+                  </span>
+                </div>
+              )}
             </div>
           </div>
-          <div className="col-xl-8 col-lg-8 col-md-12">
-            <div className="tp-award-list-wrap">
-              {award_data.map((item) => (
+          <div className="row">
+            <div className="col-xl-4 col-lg-4 col-md-12">
+              <div className="tp-award-list-thumb-wrap p-relative">
                 <div
-                  key={item.id}
-                  onMouseEnter={() => setActiveThumb(item.id)}
-                  className="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
-                  rel={`tp-award-list-thumb-${item.id}`}
+                  id="tp-award-thumb"
+                  className={`tp-award-list-thumb-${activeThumb}`}
                 >
-                  <div className="tp-award-list-content-left d-flex align-items-center">
-                    <span>{item.subtitle}</span>
-                    <p>{item.title}</p>
-                  </div>
-                  <div className="tp-award-list-content-right">
-                    <span>{item.date}</span>
-                  </div>
+                  {award_data.map((item) => (
+                    <Image
+                      key={item.id}
+                      className={`tp-award-list-thumb-${item.id}`}
+                      src={item.img}
+                      alt="list-thumb"
+                    />
+                  ))}
                 </div>
-              ))}
+              </div>
+            </div>
+            <div className="col-xl-8 col-lg-8 col-md-12">
+              <div className="tp-award-list-wrap">
+                {award_data.map((item) => (
+                  <div
+                    key={item.id}
+                    onMouseEnter={() => setActiveThumb(item.id)}
+                    className="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
+                    rel={`tp-award-list-thumb-${item.id}`}
+                  >
+                    <div className="tp-award-list-content-left d-flex align-items-center">
+                      <span>{item.subtitle}</span>
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="tp-award-list-content-right">
+                      <span>{item.date}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

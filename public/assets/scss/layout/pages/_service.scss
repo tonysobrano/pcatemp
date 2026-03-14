@@ -656,6 +656,14 @@
             gap: 8px;
         }
     }
+    &-intro-box-logo{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -24px;
+        @media #{$lg,$md,$xs}{
+            margin-top: -12px;
+        }
+    }
     &-intro-text{
         max-width: 980px;
         margin: 0;

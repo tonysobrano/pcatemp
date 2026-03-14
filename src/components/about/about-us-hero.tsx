@@ -28,11 +28,11 @@ export default function AboutUsHero() {
         </a>
       </div>
       <div className="container container-1480">
-        <div className="ab-sticky-header-align">
+        <div className="container">
           <div className="row">
             <div className="col-xl-8">
               <div
-                className="ab-inner-hero-title-box"
+                className="ab-inner-hero-title-box ab-inner-hero-title-box-logo"
                 data-lag="0.2"
                 data-stagger="0.08"
               >
